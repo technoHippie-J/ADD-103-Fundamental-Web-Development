@@ -1,0 +1,32 @@
+/* Set colors for the page */
+body{
+    background-color: white;
+    color: black; /* this is the font color*/
+}
+
+/* create styles for the h1 tag */
+
+/* Sample - pick your own colors and settings. Make sure to include the ; at the end of the line
+
+h1{
+    color: teal;
+    font-family: serif;
+    font-size: larger;
+    text-align: center;
+}
+
+
+/* create styles for the h2 tag */
+
+
+/* create styles for the h3 tag */
+
+
+/* create styles for the p tag */
+
+img{
+    width: 60%;
+    display: block;
+    margin: 10px auto; 
+    /* this set of 3 commands centers. 10px is spacing top and bottom, auto is left and right*/
+}
