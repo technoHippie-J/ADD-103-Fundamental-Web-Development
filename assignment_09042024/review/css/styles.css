@@ -1,32 +1,90 @@
 /* Set colors for the page */
 body{
-    background-color: white;
-    color: black; /* this is the font color*/
+    background-color: rgb(0, 0, 0);
+    color: rgb(228, 228, 228); /* this is the font color*/
 }
 
 /* create styles for the h1 tag */
 
-/* Sample - pick your own colors and settings. Make sure to include the ; at the end of the line
+/* Sample - pick your own colors and settings. Make sure to include the ; at the end of the line*/
 
 h1{
-    color: teal;
-    font-family: serif;
-    font-size: larger;
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 2em;
+    letter-spacing: 2.5px;
     text-align: center;
 }
 
+/* added style for h4 tag */
+
+h4{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: center;
+}
 
 /* create styles for the h2 tag */
-
+h2{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-decoration: underline;
+}
 
 /* create styles for the h3 tag */
 
+h3{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: underline;
+}
 
 /* create styles for the p tag */
 
 img{
-    width: 60%;
+    width: 50%;
     display: block;
     margin: 10px auto; 
     /* this set of 3 commands centers. 10px is spacing top and bottom, auto is left and right*/
+}
+
+/* create the style for the footer section */
+
+footer{
+    text-align: center;
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+/* create style for the blockquote */
+
+blockquote{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* apply width constraints to the <p> text */
+
+p{
+    width: 60%;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+/* I created a div because the paragraph wasn't formatting the way the others were. I'm guessing this is because it includes a blockquote(?), so I fixed it by doing this. I had considered using a class attribute, but thought I'd wait until we got a bit further to start using them. */
+
+div{
+    width: 60%;
+    margin: 10px auto;
+    text-align: justify;
 }
