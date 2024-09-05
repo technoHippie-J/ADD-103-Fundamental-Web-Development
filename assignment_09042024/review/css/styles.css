@@ -21,7 +21,7 @@ html{
 h1{
     color: #fcee0a;
     font-family: impact;
-    font-size: 2em;
+    font-size: 2.5em;
     letter-spacing: 2.5px;
     text-align: center;
     margin: 0px;
@@ -33,7 +33,7 @@ h1{
 h4{
     color: #fcee0a;
     font-family: impact;
-    font-size: 1em;
+    font-size: 1.25em;
     letter-spacing: 2px;
     text-align: center;
     margin: 5px auto 10px;
@@ -45,7 +45,7 @@ h4{
 h5{
     color: #fcee0a;
     font-family: impact;
-    font-size: .75em;
+    font-size: 1.125em;
     letter-spacing: 1.75px;
     text-align: center;
     margin: 10px auto 20px;
@@ -56,7 +56,7 @@ h5{
 h2{
     color: #fcee0a;
     font-family: impact;
-    font-size: 1.5em;
+    font-size: 1.875em;
     letter-spacing: 4px;
     text-align: center;
     text-decoration: underline;
@@ -69,7 +69,7 @@ h2{
 h3{
     color: #fcee0a;
     font-family: impact;
-    font-size: 1em;
+    font-size: 125%;
     letter-spacing: 2px;
     text-align: center;
     text-decoration: underline;
@@ -91,7 +91,7 @@ img{
 
 footer{
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.75em;
     font-style: italic;
     margin: 50px 10% 0px;
 }
@@ -101,7 +101,7 @@ footer{
 blockquote{
     color: #fcee0a;
     font-family: impact;
-    font-size: 0.9em;
+    font-size: 1.125em;
     text-align: center;
     margin: 0px 10%;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -113,6 +113,7 @@ p{
     width: 85%;
     margin: 10px auto;
     text-align: justify;
+    font-size: 125%;
 }
 
 /* I created a div because the paragraph wasn't formatting the way the others were. I'm guessing this is because it includes a blockquote(?) which must have thrown off the formatting for the paragraph following it, so I fixed it by doing this. I had considered using a class attribute, but thought I'd wait until we got a bit further to start using them. */
@@ -121,6 +122,7 @@ div{
     width: 85%;
     margin: 10px auto;
     text-align: justify;
+    font-size: 125%;
 }
 
 /* Decided I needed a class anyway to achieve the spacing I wanted */
