@@ -5,6 +5,8 @@ body{
     color: rgb(228, 228, 228); /* this is the font color*/
     width: 60%; /* centers the body content for a pc browser, but would probably look too thin on a phone screen */
     margin: 10px auto;
+    border-radius: 5%;
+    border:2px solid #fcee0a;
 }
 
 /* just to give the page a background color separate from the rest of the content */
@@ -22,7 +24,8 @@ h1{
     font-size: 2em;
     letter-spacing: 2.5px;
     text-align: center;
-    margin: 0px 0px 0px;
+    margin: 0px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 /* added style for h4 tag */
@@ -33,6 +36,8 @@ h4{
     font-size: 1em;
     letter-spacing: 2px;
     text-align: center;
+    margin: 5px auto 10px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 /* added style for h5 tag */
@@ -43,6 +48,8 @@ h5{
     font-size: .75em;
     letter-spacing: 1.75px;
     text-align: center;
+    margin: 10px auto 20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 /* create styles for the h2 tag */
@@ -53,6 +60,8 @@ h2{
     letter-spacing: 4px;
     text-align: center;
     text-decoration: underline;
+    margin: 5px auto;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 /* create styles for the h3 tag */
@@ -64,6 +73,8 @@ h3{
     letter-spacing: 2px;
     text-align: center;
     text-decoration: underline;
+    margin: 5px auto;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 /* create styles for the p tag */
@@ -71,7 +82,8 @@ h3{
 img{
     width: 75%;
     display: block;
-    margin: 10px auto 0px; 
+    margin: 10px auto; 
+    box-shadow:5px 5px 5px #000000;
     /* this set of 3 commands centers. 10px is spacing top and bottom, auto is left and right*/
 }
 
@@ -81,7 +93,7 @@ footer{
     text-align: center;
     font-size: 0.6em;
     font-style: italic;
-    margin: 0px 10% 10px;
+    margin: 50px 10% 0px;
 }
 
 /* create style for the blockquote */
@@ -91,7 +103,8 @@ blockquote{
     font-family: impact;
     font-size: 0.9em;
     text-align: center;
-    margin: 0px 10% 0px;
+    margin: 0px 10%;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 /* apply width constraints to the <p> text */
@@ -112,8 +125,8 @@ div{
 
 /* Decided I needed a class anyway to achieve the spacing I wanted */
 
-p.first_p{
+.first_p{
     width: 85%;
-    margin: 20px auto;
+    margin: 20px auto 10px;
     text-align: justify;
 }
