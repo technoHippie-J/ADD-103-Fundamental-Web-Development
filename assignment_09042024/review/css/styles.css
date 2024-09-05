@@ -26,6 +26,16 @@ h4{
     text-align: center;
 }
 
+/* added style for h5 tag */
+
+h5{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: .75em;
+    letter-spacing: 1.75px;
+    text-align: center;
+}
+
 /* create styles for the h2 tag */
 h2{
     color: #fcee0a;
@@ -81,7 +91,7 @@ p{
     text-align: justify;
 }
 
-/* I created a div because the paragraph wasn't formatting the way the others were. I'm guessing this is because it includes a blockquote(?), so I fixed it by doing this. I had considered using a class attribute, but thought I'd wait until we got a bit further to start using them. */
+/* I created a div because the paragraph wasn't formatting the way the others were. I'm guessing this is because it includes a blockquote(?) which must have thrown off the formatting for the paragraph following it, so I fixed it by doing this. I had considered using a class attribute, but thought I'd wait until we got a bit further to start using them. */
 
 div{
     width: 60%;
