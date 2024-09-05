@@ -1,11 +1,13 @@
 /* Set colors for the page */
+/* I decided I wanted the body to have a different color than the page background, making it more of a visual container */
 body{
     background-color: rgb(37, 37, 37);
     color: rgb(228, 228, 228); /* this is the font color*/
-    width: 60%;
-    margin: 5px auto;
+    width: 60%; /* centers the body content for a pc browser, but would probably look too thin on a phone screen */
+    margin: 10px auto;
 }
 
+/* just to give the page a background color separate from the rest of the content */
 html{
     background-color:rgb(0, 0, 0);
 }
@@ -20,7 +22,7 @@ h1{
     font-size: 2em;
     letter-spacing: 2.5px;
     text-align: center;
-    margin: 15px 0px 0px;
+    margin: 0px 0px 0px;
 }
 
 /* added style for h4 tag */
@@ -67,9 +69,9 @@ h3{
 /* create styles for the p tag */
 
 img{
-    width: 50%;
+    width: 75%;
     display: block;
-    margin: 10px auto; 
+    margin: 10px auto 0px; 
     /* this set of 3 commands centers. 10px is spacing top and bottom, auto is left and right*/
 }
 
@@ -95,7 +97,7 @@ blockquote{
 /* apply width constraints to the <p> text */
 
 p{
-    width: 80%;
+    width: 85%;
     margin: 10px auto;
     text-align: justify;
 }
@@ -103,7 +105,15 @@ p{
 /* I created a div because the paragraph wasn't formatting the way the others were. I'm guessing this is because it includes a blockquote(?) which must have thrown off the formatting for the paragraph following it, so I fixed it by doing this. I had considered using a class attribute, but thought I'd wait until we got a bit further to start using them. */
 
 div{
-    width: 80%;
+    width: 85%;
     margin: 10px auto;
+    text-align: justify;
+}
+
+/* Decided I needed a class anyway to achieve the spacing I wanted */
+
+p.first_p{
+    width: 85%;
+    margin: 20px auto;
     text-align: justify;
 }
