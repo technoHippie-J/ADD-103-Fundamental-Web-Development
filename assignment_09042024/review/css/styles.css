@@ -1,7 +1,13 @@
 /* Set colors for the page */
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(37, 37, 37);
     color: rgb(228, 228, 228); /* this is the font color*/
+    width: 60%;
+    margin: 5px auto;
+}
+
+html{
+    background-color:rgb(0, 0, 0);
 }
 
 /* create styles for the h1 tag */
@@ -14,6 +20,7 @@ h1{
     font-size: 2em;
     letter-spacing: 2.5px;
     text-align: center;
+    margin: 15px 0px 0px;
 }
 
 /* added style for h4 tag */
@@ -70,8 +77,9 @@ img{
 
 footer{
     text-align: center;
-    font-size: 0.75em;
+    font-size: 0.6em;
     font-style: italic;
+    margin: 0px 10% 10px;
 }
 
 /* create style for the blockquote */
@@ -81,12 +89,13 @@ blockquote{
     font-family: impact;
     font-size: 0.9em;
     text-align: center;
+    margin: 0px 25% 0px;
 }
 
 /* apply width constraints to the <p> text */
 
 p{
-    width: 60%;
+    width: 80%;
     margin: 10px auto;
     text-align: justify;
 }
@@ -94,7 +103,7 @@ p{
 /* I created a div because the paragraph wasn't formatting the way the others were. I'm guessing this is because it includes a blockquote(?) which must have thrown off the formatting for the paragraph following it, so I fixed it by doing this. I had considered using a class attribute, but thought I'd wait until we got a bit further to start using them. */
 
 div{
-    width: 60%;
+    width: 80%;
     margin: 10px auto;
     text-align: justify;
 }
