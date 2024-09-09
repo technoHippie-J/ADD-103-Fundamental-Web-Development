@@ -1,0 +1,39 @@
+
+
+body{
+   
+    font-size:16px;
+    line-height:2;
+    color:brown;
+    padding: 0px;
+    margin:0px;
+}
+
+#home{
+    
+    background-image:url("../images/winter.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#puppies{
+    /*add a background image here*/
+}
+
+#kittens{
+    /*add a background image here*/
+
+}
+img{
+    width: 30%;
+    display: block;
+    margin: 10px auto;
+}
+
+.container{
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid orange;
+    padding: 5px;
+    background:rgba(255,255,255,.8);
+}
