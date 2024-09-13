@@ -17,7 +17,6 @@ body{
     background-size: cover;
 }
 #puppies{
-    /*add a background image here*/
     background-image:url("../images/beach.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,7 +24,6 @@ body{
 }
 
 #kittens{
-    /*add a background image here*/
     background-image:url("../images/aurora.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
