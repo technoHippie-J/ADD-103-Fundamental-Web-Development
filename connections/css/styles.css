@@ -18,10 +18,18 @@ body{
 }
 #puppies{
     /*add a background image here*/
+    background-image:url("../images/beach.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #kittens{
     /*add a background image here*/
+    background-image:url("../images/aurora.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 img{
