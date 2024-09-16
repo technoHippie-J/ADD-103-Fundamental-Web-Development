@@ -1,1 +1,46 @@
 /* Styles */
+
+body{
+    background-color:#5E4029;
+}
+
+header{
+    background-color:#3F5144;
+    border:2px solid #FCBD63;
+    height:150px;
+    margin:2px auto 25px;
+}
+
+main{
+    height:600px;
+}
+
+.container{
+    display:inline-flex;
+    background-color:#3F5144;
+    border:2px solid #FCBD63;
+    height:600px;
+    width:20%;
+    margin:0px auto;
+}
+
+.box{
+    display:inline-flex;
+    vertical-align:top;
+    background-color:#3F5144;
+    border:2px solid #FCBD63;
+    height:600px;
+    width:75%;
+    margin:0px auto;
+}
+
+footer{
+    background-color:#3F5144;
+    border:2px solid #FCBD63;
+    height:75px;
+    margin:25px auto 2px;
+}
+
+#copyright{
+
+}
