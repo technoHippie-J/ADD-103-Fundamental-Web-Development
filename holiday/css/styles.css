@@ -13,25 +13,78 @@ header{
 
 main{
     height:600px;
+    margin:auto;
 }
 
 .container{
     display:inline-flex;
+    vertical-align:middle;
     background-color:#3F5144;
     border:2px solid #FCBD63;
     height:600px;
-    width:20%;
+    width:49%;
     margin:0px auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#FCBD63;
+    text-align:center;
 }
 
-.box{
-    display:inline-flex;
-    vertical-align:top;
-    background-color:#3F5144;
-    border:2px solid #FCBD63;
-    height:600px;
-    width:75%;
-    margin:0px auto;
+#nicholas-image-div{
+    margin:30px 20px;
+    width: 300px;
+}
+
+#st-nicholas-pic{
+    width:300px;
+    height:90%;
+    margin:25px auto; 
+    box-shadow:5px 5px 5px #000000;
+}
+
+#nicholas-paragraph-div{
+    width:auto;
+    margin:25px auto;
+}
+
+#nicholas-heading{
+    width:auto;
+    text-decoration:underline;
+}
+
+#nicholas-text{
+    padding:5%;
+    line-height:2em;
+}
+
+#tradition-paragraph-div{
+    width:60%;
+    margin:25px auto;
+}
+
+#tradition-heading{
+    text-decoration:underline;
+}
+
+#tradition-text{
+    padding:5%;
+    line-height:2em;
+}
+
+#st-nicholas-image-pair{
+    width:40%;
+    display:inline-grid;
+}
+
+#st-nicholas-children-pic{
+    width:300px;
+    margin:auto;
+    box-shadow:5px 5px 5px #000000;
+}
+
+#st-nicholas-old-pic{
+    width:300px;
+    margin:auto;
+    box-shadow:5px 5px 5px #000000;
 }
 
 footer{
