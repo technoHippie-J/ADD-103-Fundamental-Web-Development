@@ -1,6 +1,10 @@
 /* Global styling for the body element */
 body {
     /* Add styles here to affect the entire page */
+    background-image: url('../images/aurora-borealis.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* Styling for the div and header elements, affecting the width, margin, border, and background color */
@@ -14,6 +18,8 @@ header {
     /* Sets a 3px solid gold border */
     background: rgba(0, 0, 0, .7);
     /* Sets a semi-transparent black background */
+    overflow: auto;
+    padding: 15px;
 }
 
 /* Specific styling for all div elements, setting a minimum height */
@@ -34,11 +40,19 @@ h2 {
 /* Placeholder for the background styling, add your specific styles here */
 #background {
     /* Add background-specific styles here */
+    min-height: 500px;
+    background-image: url('../images/tree.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* Placeholder for the image map styling, add your specific styles here */
-#img-map {
+#img-map img {
     /* Add image map-specific styles here */
+    width: 50%;
+    display: block;
+    margin: 10px auto;
 }
 
 /* Placeholder for floating left, add your specific styles here */
@@ -46,11 +60,11 @@ h2 {
     /* Add floating left-specific styles here */
     float: left;
     margin: 20px;
+    width: 40%;
 }
 
 #float-left{
     color: aqua;
-    overflow: auto;
 }
 
 /* Placeholder for floating right, add your specific styles here */
@@ -58,6 +72,7 @@ h2 {
     /* Add floating right-specific styles here */
     float: right;
     margin: 25px;
+    width: 40%;
 }
 
 #float-right{
@@ -66,16 +81,25 @@ h2 {
     padding: 15px;
 }
 /* Placeholder for picture tag, add your specific styles here */
-#picture-tag {
+#picture-tag img {
     /* Add picture tag-specific styles here */
+    width: 50%;
+    display: block;
+    margin: 10px auto;
 }
 
 /* Placeholder for linked image, add your specific styles here */
-#linked-image {
+#linked-image img {
     /* Add linked image-specific styles here */
+    width: 50%;
+    display: block;
+    margin: 10px auto;
 }
 
 /* Placeholder for image as a link, add your specific styles here */
-#img-as-link {
+#img-as-link img {
     /* Add image as link-specific styles here */
+    width: 50%;
+    display: block;
+    margin: 25px auto;
 }
