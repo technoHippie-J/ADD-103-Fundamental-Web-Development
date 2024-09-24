@@ -50,9 +50,9 @@ h2 {
 /* Placeholder for the image map styling, add your specific styles here */
 #img-map img {
     /* Add image map-specific styles here */
-    width: 50%;
-    display: block;
-    margin: 10px auto;
+/* the styles code I added here
+broke the map, so I removed it
+good to know though */
 }
 
 /* Placeholder for floating left, add your specific styles here */
