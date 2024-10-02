@@ -62,14 +62,17 @@ dl{
     float: left;
     margin-left: 30px;
     border-style: ridge;
+    font-family:math;
 }
 
 dt{
     color:#2a8d00;
+    font-family:fantasy;
 }
 
 dd{
     color:#934c00;
+    font-family:cursive;
 }
 
 figure{
