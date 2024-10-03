@@ -1,34 +1,41 @@
 body{
+    background-color:rgb(19, 19, 19);
+    margin:0px;
+    min-width:1080px; /* Maintains a decent layout as screen gets thinner */
+}
+
+#body-div{    
     background-color:rgb(45, 45, 45);
     width: 90%;
-    margin: 5px auto;
-    border: 1px solid black;
+    margin: 0px auto;
+    padding-bottom:15px;
 }
 
 header{
+    display:flex; /* tried this after using it below, centered the h1 text both vertically and horizontally */
     background-color:rgb(35, 35, 35);
     min-height: 100px;
     color:#b9b9b9;
-    position: relative;
 }
 
 #top-nav{
     background-color:rgb(58, 58, 58);
-    border: 1px solid black;
+    border: 2px solid black;
     width: auto;
     text-align:center;
     padding: 10px;
+    border-style:outset;
 }
 
 nav a{
-    display: inline-block;
+    display: inline-block; /* places elements next to eachother and respects padding/margins */
     margin-left: 30px;
     color:ivory; /* can change this later */
     text-decoration: none;
     font-size: 24px;
     padding: 10px 15px;
     line-height: 1.5;
-    background-color: rgb(0, 126, 57);
+    background-color: rgb(61, 61, 61);
     border-radius: 20px;
     border: 2px solid yellow;
     box-shadow: inset -2px 2px 5px 2px rgba(255, 255, 255, 155), inset 2px -2px 5px 2px rgba(0, 0, 0, 155);
@@ -51,40 +58,71 @@ nav a:active{
 }
 
 h1{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    margin:0;
+    width:auto;
+    margin:auto;
     text-decoration:underline;
 }
 h2{
     margin: 5px;
     text-decoration:underline;
+    text-align:center;
+    font-size:2em;
 }
 
 .heading-container{
     background-color:rgb(97, 97, 97);
-    width:auto;
-    margin: 15px;
-    padding: 5px 0px 5px 5px;
-}
-
-ul{
-    background-color:#FFF;
-    width: fit-content;
-    padding: 15px 15px 15px 35px;
-    margin: 15px;
-    display: inline-block;
-    vertical-align:top;
-}
-
-img{
-    max-width: 600px;
-    display: inline-block;
+    border-style:solid;
+    border-width:3px;
+    border-color:#000;
+    width:80%;
+    min-height:400px;
+    margin: 1em auto;
+    padding: 5px 5px 5px 5px;
+    border-radius:7.5px;
+    border-style:inset;
 }
 
 .ul-img-container{
-    width:fit-content;
+    display:flex; /* easier alignment tool, creates a flexbox*/
+    align-items:center; /* easy vertical alignment, basically brings things within the container to "y=0" */
+    justify-content:space-between; /* distributes contents with equal space between them */
+    width:auto;
+    min-height:400px;
     margin:auto;
+    /* found and learned about flexboxes at: https://www.w3schools.com/css/css3_flexbox_container.asp */
+}
+
+#ul-container{
+    width:50%;
+}
+
+#img-container{
+    width:50%;
+}
+
+ul{
+    background-color:#b3b3b3;
+    color:#000000;
+    width: 60%;
+    height:100%;
+    padding: 15px 15px 15px 30px;
+    margin: auto;
+    line-height:1.5;
+    box-shadow:5px 5px 5px #000000;
+    border-radius:15px;
+}
+
+img{
+    display:block; /* Centered image in container */
+    width: 80%;   
+    box-shadow:5px 5px 5px #000000;
+    margin: auto;
+    border-radius:15px;
+}
+
+#top_link{
+    display:block; /* Needed this to make text-align work. I think because a parent container has flex */
+    width:100%;
+    text-align:center;
+    font-size:1.25em;
 }
