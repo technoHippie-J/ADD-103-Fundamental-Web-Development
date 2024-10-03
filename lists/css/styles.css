@@ -71,10 +71,13 @@ footer{
 
 dt{
     color:#c0bc80;
+    font-family:"Bebas Neue";
+    font-size:2em;
 }
 
 dd{
     color:#a3a53e;
+    font-family:"Bebas Neue";
 }
 
 #ballot{
@@ -88,3 +91,10 @@ dd{
 h2{
     text-decoration:underline;
 }
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* https://fonts.google.com/selection/embed */
