@@ -60,7 +60,7 @@ footer{
 
 .list-box{
     border-radius:15px;
-    padding:30px 20px;
+    padding:30px;
     color:rgb(199, 181, 158);
     box-shadow: inset -2px 2px 5px 2px rgba(255, 255, 255, 155), inset 2px -2px 5px 2px rgba(0, 0, 0, 155);
     line-height:1.5;
