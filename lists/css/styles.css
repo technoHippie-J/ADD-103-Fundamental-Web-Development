@@ -82,10 +82,12 @@ dd{
 
 #ballot{
     list-style-type: "\2610"; /* Unicode for Ballot Box */
+    text-indent:5px;
 }
 
 #lighthouse{
     list-style-type: "\26EF"; /* Unicode for Map Symbol for Lighthouse */
+    text-indent:5px;
 }
 
 h2{
