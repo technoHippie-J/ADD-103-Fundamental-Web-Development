@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="body-container" class="container">
+        <div id="header-container" class="container">
+            <header>
+                <div id="header-left" class="header-div">
+                    Tony
+                </div>
+                <img id="logo" src="images/logo.png" alt="Page Logo">
+                <div id="header-right" class="header-div">
+                    Janus
+                </div>
+            </header>
+        </div>
+        <div id="nav-container" class="container">
+            <nav>
+                <a class="nav-link" id="nav-link-home" href="../index.html">Home</a>
+                <a class="nav-link" id="nav-link-life" href="life.html">Life</a>
+                <a class="nav-link" id="nav-link-hobbies" href="hobbies.html">Hobbies</a>
+                <a class="nav-link" id="nav-link-person" href="person.html">Person</a>
+                <a class="nav-link" id="nav-link-vision" href="vision.html">Vision</a>
+            </nav>
+        </div>
+        <div id="main-container" class="container">
+            <!--
+                The area between the <main> and </main> tags is what can be changed from page to page. Everything before this comment will remain a static piece of the design.
+            -->
+            <main>
+                <div id="contact-block-left" class="contact-block">
+                    <h2 id="contact-h2">
+                        Contact Me
+                    </h2>
+                    <p id="contact-p">
+                        Sample Text
+                    </p>
+                </div>
+                <!--
+                    The <div> below contains a contact form, which we haven't played with yet in class. I have gone to W3Schools and used the information found there to implement the form into this site. The pages used are the following:
+
+                    -https://www.w3schools.com/html/html_forms.asp
+
+                    -https://www.w3schools.com/html/html_forms_attributes.asp
+
+                    -https://www.w3schools.com/html/html_form_elements.asp
+
+                    -https://www.w3schools.com/tags/att_form_enctype.asp
+
+                    -https://www.w3schools.com/html/html_form_input_types.asp
+
+                    -https://www.w3schools.com/tags/att_input_placeholder.asp
+
+                    -https://stackoverflow.com/questions/2436716/is-application-x-www-form-urlencoded-default-for-html-form
+
+                    I've also found that for it to work properly, I would need a .php file to write the contact information to. Since I do not know how to do this yet, I will only create the empty file in a folder called "php" and once I'm done coding the rest of the project, and if I have time, I will see if I can learn enough to get it working. If not, then it will act as a reminder for me to reference in the future. If I do make the attempt, I will start at the following link:
+
+                    -https://www.w3schools.com/php/default.asp
+                -->
+                <div id="contact-block-right" class="contact-block">
+                    <form action="../php/contact_requests.php" method="post" autocomplete="on" enctype="application/x-www-form-urlencoded" id="contact-form">
+                        <fieldset id="contact-fieldset-info">
+                            <legend>Contact Information</legend>
+                            <label for="fname">First Name:</label>
+                                <br>
+                                <input type="text" id="contact-fname" name="fname" placeholder="Enter your first name...">
+                                <br>
+                            <label for="lname">Last Name:</label>
+                                <br>
+                                <input type="text" id="contact-lname" name="lname" placeholder="Enter your last name...">
+                                <br>
+                            <label for="email">Email:</label>
+                                <br>
+                                <input type="email" id="contact-email" name="email" placeholder="Enter your email...">
+                                <br>
+                            <label for="subject">Subject:</label>
+                                <br>
+                                <input type="text" id="contact-subject" name="subject" placeholder="Few words why you're reaching out...">
+                                <br>
+                        </fieldset>
+                        <fieldset id="contact-fieldset-message">
+                            <legend>Your Message:</legend>
+                            <textarea name="message" rows="10" cols="50" id="contact-message" placeholder="Enter your message here..."></textarea>
+                        </fieldset>
+                        <br>
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </main>
+            <!--
+                End section of editable code. Anything after this comment is static from page to page as pieces of the design.
+            -->
+        </div>
+        <div id="footer-container" class="container">
+            <footer>
+                <small>&copy; Copyright 2024, Tony Janus</small>
+                <a class="footer-link" id="contact-link" href="contact.html">Contact</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
