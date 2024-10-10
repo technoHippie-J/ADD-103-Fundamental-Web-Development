@@ -64,56 +64,34 @@ section:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Flexbox layout for the section with text and image */
+/* Section Content Layout */
 .section-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 50px; Ensure equal gap between text and image
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between;
 }
 
-/* Text content styling */
 .text-content {
     flex: 1;
+    padding-right: 20px;
 }
 
-#all-ages .text-content {
-    text-align: left; /* Left-aligned for "For Makers of All Ages" */
-}
-
-#adults-professionals .text-content {
-    text-align: right; /* Right-aligned for "For Adults and Professionals" */
-}
-
-/* Image content styling */
 .image-content {
     flex: 1;
+    padding-left: 20px;
 }
 
 .image-content img {
     width: 100%;
-    max-width: 500px;
     height: auto;
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Reverse layout for "For Adults and Professionals" */
+/* Reverse Layout for Adults and Professionals Section */
 #adults-professionals .section-content {
     flex-direction: row-reverse;
-}
-
-/* Images */
-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border: 4px solid #1f5e7f;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* List Styles */
@@ -196,21 +174,16 @@ footer p {
         font-size: 2em;
     }
 
-    section {
-        padding: 15px;
-    }
-
     .section-content {
         flex-direction: column;
-        text-align: center;
     }
 
-    #all-ages .text-content,
-    #adults-professionals .text-content {
-        text-align: center;
+    .text-content, .image-content {
+        padding: 0;
+        margin-bottom: 20px;
     }
 
-    .image-content img {
-        max-width: 100%;
+    #adults-professionals .section-content {
+        flex-direction: column;
     }
 }
