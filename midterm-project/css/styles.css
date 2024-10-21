@@ -738,9 +738,9 @@ ul{}
     border-color:rgb(31, 36, 22);
     border-radius:10px;
     background-color:rgb(31, 36, 22, 0.5);
-    padding:10px 10px;
+    padding:10px 20px;
     color:rgb(219, 219, 128);
-    font-size:1.05em;
+    font-size:1.3em;
 }
 
 #vision-p-mid{
@@ -751,9 +751,9 @@ ul{}
     border-color:rgb(31, 36, 22);
     border-radius:10px;
     background-color:rgb(31, 36, 22, 0.5);
-    padding:10px 10px;
+    padding:10px 20px;
     color:rgb(219, 219, 128);
-    font-size:1.05em;
+    font-size:1.3em;
 }
 
 #vision-p-bottom{
@@ -764,9 +764,9 @@ ul{}
     border-color:rgb(31, 36, 22);
     border-radius:10px;
     background-color:rgb(31, 36, 22, 0.5);
-    padding:10px 10px;
+    padding:10px 20px;
     color:rgb(219, 219, 128);
-    font-size:1.05em;
+    font-size:1.3em;
 }
 
 /* Contact Page Classes and IDs */
