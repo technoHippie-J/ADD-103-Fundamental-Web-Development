@@ -785,7 +785,8 @@ input{
 
 .contact-img{}
 
-.contact-p{}
+.contact-p{
+}
 
 .contact-block{
     display:flex;
@@ -834,7 +835,7 @@ input{
     border-color:rgb(31, 36, 22);
     border-radius:10px;
     background-color:rgb(31, 36, 22, 0.5);
-    padding:10px 10px;
+    padding:30px;
     color:rgb(219, 219, 128);
     font-size:1.05em;
 }
@@ -857,7 +858,7 @@ legend{
 
 #contact-h2{
     font-size:3em;
-    margin:0px 0px 20px;
+    margin:0px 0px 30px;
 }
 
 #contact-p{
