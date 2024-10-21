@@ -246,6 +246,12 @@ ul{}
     box-sizing:border-box;
 }
 
+.nav-link:active{
+    background-color:rgb(30, 30, 30);
+    filter:drop-shadow(0px 0px 10px rgb(220, 220, 220));
+    color:rgb(255, 255, 255)
+}
+
 #nav-link-home{}
 
 #nav-link-life{}
