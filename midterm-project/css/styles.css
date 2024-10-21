@@ -86,8 +86,6 @@ ul{}
 
 /* Container <div>'s for page elements, important/structural */
 
-.container{}
-
 #body-container{
     width:94%;
     height:100%;
@@ -252,17 +250,10 @@ ul{}
     color:rgb(255, 255, 255)
 }
 
-#nav-link-home{}
-
-#nav-link-life{}
-
-#nav-link-hobbies{}
-
 #nav-link-person{
     text-decoration:line-through;
 }
 
-#nav-link-vision{}
 
 /* Footer IDs */
 
@@ -316,10 +307,6 @@ ul{}
     text-align:right;
 }
 
-.footer-box{
-
-}
-
 /* Home Page Classes and IDs */
 
 .home-block{
@@ -350,15 +337,6 @@ ul{}
     background-color:rgb(60, 85, 54);
     margin:10px;
 }
-
-#home-block-01{}
-
-#home-block-02{}
-
-#home-img-01{
-}
-
-#home-img-02{}
 
 #home-p-01{
     text-align:center;
@@ -393,12 +371,6 @@ ul{}
 }
 
 /* Life Page Classes and IDs */
-
-.life-img{}
-
-.life-p{}
-
-.life-block{}
 
 #life-heading{
     font-size:3em;
@@ -436,8 +408,6 @@ ul{}
     box-sizing:border-box;
 }
 
-#life-p{}
-
 #life-gallery-container{
     display:flex;
     justify-content:center;
@@ -454,8 +424,6 @@ ul{}
     box-sizing:border-box;
 }
 
-.hobbies-p{}
-
 #hobbies-h2{
     text-align:center;
     font-size:2.5em;
@@ -469,9 +437,6 @@ ul{}
     justify-content:space-around;
     align-items:center;
 
-}
-
-.hobbies-block{
 }
 
 #hobbies-block-left{
@@ -789,11 +754,6 @@ input{
     text-align:right;
 }
 
-.contact-img{}
-
-.contact-p{
-}
-
 .contact-block{
     display:flex;
     align-items:center;
@@ -894,17 +854,6 @@ legend{
     height:1.5em;
 }
 
-#contact-fname{}
-
-#contact-lname{}
-
-#contact-email{}
-
-#contact-subject{}
-
 #contact-fieldset-message{
     height:fit-content;
-}
-
-#contact-message{
 }
