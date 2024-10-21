@@ -3,30 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Hobbies</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Great+Vibes&family=Yatra+One&display=swap" rel="stylesheet">
+    <title>Tony Janus</title>
 </head>
 <body>
     <div id="body-container" class="container">
         <div id="header-container" class="container">
-            <header>
+            <header class="great-vibes-regular">
+                <div id="header-left-logo">
+                    <img id="logo-left" src="../images/logo-left-face.png" alt="Left Face Logo">
+                </div>
                 <div id="header-left" class="header-div">
                     Tony
                 </div>
-                <img id="logo" src="images/logo.png" alt="Page Logo">
+                <div id="logo-container">
+                    <img id="logo" src="../images/logo.png" alt="Page Logo">
+                </div>
                 <div id="header-right" class="header-div">
                     Janus
+                </div>
+                <div id="header-right-logo">
+                    <img id="logo-right" src="../images/logo-right-face.png" alt="Right Face Logo">
                 </div>
             </header>
         </div>
         <div id="nav-container" class="container">
-            <nav>
-                <a class="nav-link" id="nav-link-home" href="../index.html">Home</a>
-                <a class="nav-link" id="nav-link-life" href="life.html">Life</a>
-                <a class="nav-link" id="nav-link-hobbies" href="hobbies.html">Hobbies</a>
-                <a class="nav-link" id="nav-link-person" href="person.html">Person</a>
-                <a class="nav-link" id="nav-link-vision" href="vision.html">Vision</a>
+            <nav class="yatra-one-regular">
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-home" href="../index.html">Home</a>
+                </div>
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-life" href="life.html">Life</a>
+                </div>
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-hobbies" href="hobbies.html">Hobbies</a>
+                </div>
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-person" href="person.html">Person</a>
+                </div>
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-vision" href="vision.html">Vision</a>
+                </div>
             </nav>
         </div>
         <div id="main-container" class="container">
@@ -34,26 +55,34 @@
                 The area between the <main> and </main> tags is what can be changed from page to page. Everything before this comment will remain a static piece of the design.
             -->
             <main>
-                <div id="hobbies-block-left" class="hobbies-block">
-                    <img src="" alt="" id="hobbies-img-01" class="hobbies-img">
-                    <p id="hobbies-p-01" class="hobbies-p">
-                        Currently, I'm hyper-focused on 3D printing. After 6-8 months of inactivity, I feel the focus building again. I'm printing things to improve my quality of life in small ways, like minimalist wallet designs and pull-out drawers to mount under my adjustable desk. I got a good deal on motorized table legs without a tabletop and used a 60”x30”x1.25” pine sheet from Menards. Since it's semi-DIY, I figured I'd add 3D-printed drawers underneath. The more drawer space I have, the less clutter on the desk itself!
-                    </p>
-                </div>
-                <div id="hobbies-block-middle" class="hobbies-block">
-                    <h2>
-                        Hobbies
-                    </h2>
-                    <p id="hobbies-p-02" class="hobbies-p">
-                        It’s difficult for me to maintain hobbies. I tend to hyper-focus on one or two things, dedicating most of my time to them for 6 weeks to 4 months before getting bored and moving on, though some rotate back once or twice a year. This results in half-finished projects, unused parts, and multiple sets of beginner equipment for various interests. That isn’t to say my hobbies are time-wasters. As I've gotten older, I focus more on self-improvement rather than entertainment. Most of my hyper-focuses now involve self-improvement or quality of life upgrades. The problem is, like before, these things don't last, and returning to bad habits after months of effort can be painful, turning what was tolerable before into a major drain on mood, energy, and motivation.
-                    </p>
-                    <img src="" alt="" id="hobbies-img-02" class="hobbies-img">
-                </div>
-                <div id="hobbies-block-right" class="hobbies-block">
-                    <img src="" alt="" id="hobbies-img-03" class="hobbies-img">
-                    <p id="hobbies-p-03" class="hobbies-p">
-                        Though it's not a current hyper-focus, I'm hoping to get serious about my health again. I have medical issues greatly improved by restrictive diets—keto helps a lot and carnivore works like magic—and I've been strict with them before. The first time I did keto, I lost 30 lbs in a month, returned to 180 lbs in a couple of months, saw huge symptom reductions, and felt more energetic than since childhood. I was hyper-focused on it for a year and learned a lot about metabolism, inflammatory diseases, blood sugar, and mental illness. Without that hyper-focus, I've struggled to maintain the restrictions. So I'm revisiting YouTube channels to trigger the hyper-focus again. Another benefit is these diets motivate me to experiment with recipes for variety. On a standard diet, it's easy to grab frozen pizza or eat out, but on keto and carnivore, that's not an option. Everything is made from scratch with fresh ingredients, greatly improving quality of life.
-                    </p>
+                <div id="hobbies-main-container">
+                    <div id="hobbies-block-left" class="hobbies-block">
+                        <div id="img-3dp-div">
+                            <img src="../images/3d-printer.webp" alt="Epic 3D Printing Shot" id="hobbies-img-01" class="hobbies-img">
+                        </div>
+                        <p id="hobbies-p-01" class="hobbies-p">
+                            I'm focused on 3D printing again after 6-8 months of inactivity, and motivation is building. Lately, I’ve been printing small items to improve daily life, like minimalist wallets and pull-out drawers for my adjustable desk. I got a great deal on motorized table legs and used a 60”x30” pine sheet as the tabletop. Since it’s a semi-DIY project, I’m adding 3D-printed drawers underneath. The more drawer space I print, the less clutter on my desk. Designing these practical items is a fun way to mix creativity with functionality.
+                        </p>
+                    </div>
+                    <div id="hobbies-block-middle" class="hobbies-block">
+                        <h2 id="hobbies-h2">
+                            Hobbies
+                        </h2>
+                        <p id="hobbies-p-02" class="hobbies-p">
+                            I struggle to maintain hobbies, often hyper-focusing on one or two for a few months before getting bored and moving on. Some hobbies rotate back, but this leaves behind unfinished projects and unused equipment. Still, they aren't time-wasters. As I’ve grown older, I focus more on self-improvement than entertainment, with most of my hyper-focuses aimed at personal growth or quality-of-life upgrades. The issue is these phases don’t last, and slipping back into bad habits after months of effort can be draining, impacting my mood, energy, and motivation.
+                        </p>
+                        <div id="img-self-imp-div">
+                            <img src="../images/self-imp.webp" alt="Man improving himself" id="hobbies-img-02" class="hobbies-img">
+                        </div>
+                    </div>
+                    <div id="hobbies-block-right" class="hobbies-block">
+                        <div id="img-carn-div">
+                            <img src="../images/carnivore.webp" alt="Butchering some meat" id="hobbies-img-03" class="hobbies-img">
+                        </div>
+                        <p id="hobbies-p-03" class="hobbies-p">
+                            I’m hoping to get serious about my health again, though it’s not my current focus. Keto and carnivore diets have greatly improved my medical issues—keto helps, and carnivore works wonders. When I first did keto, I lost 30 lbs in a month, hit 180 lbs, reduced symptoms, and had more energy than ever. I stayed hyper-focused for a year, learning a lot about metabolism, inflammation, and mental health. Without that focus, it’s been harder to stay strict, so I’m revisiting YouTube channels to reignite it. These diets also push me to cook from scratch, improving my quality of life.
+                        </p>
+                    </div>
                 </div>            
             </main>
             <!--
@@ -61,9 +90,22 @@
             -->
         </div>
         <div id="footer-container" class="container">
-            <footer>
-                <small>&copy; Copyright 2024, Tony Janus</small>
-                <a class="footer-link" id="contact-link" href="contact.html">Contact</a>
+            <footer id="footer-flex">
+                <div id="footer-box-left" class="footer-box">
+
+                </div>
+                <div id="footer-box-center" class="footer-box">
+                    <small>
+                        &copy; Copyright 2024, Tony Janus
+                        <br>
+                        Images and logos generated by ChatGPT, and text written in collaboration with ChatGPT
+                    </small>
+                </div>
+                <div id="footer-box-right" class="footer-box">
+                    <div id="footer-link-container" class="yatra-one-regular">
+                        <a class="footer-link" id="contact-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
