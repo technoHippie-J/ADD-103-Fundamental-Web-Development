@@ -279,13 +279,13 @@ td{
 
 td:hover {
   /* for some reason, my background isn't changing color unless I make it for td instead of tr */
-  background:#152123;
+  background-color:#152123;
   color:ivory;
 }
 
 .tr-sty:hover {
   /* text changes color, but the background won't do it for tr */
-  background:#152123;
+  background-color:#152123;
   color:ivory;
 }
 

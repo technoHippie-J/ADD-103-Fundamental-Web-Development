@@ -151,6 +151,12 @@ img{
 .div-paragraph{
 }
 
+#copyright{
+  text-align: center;
+  font-size: 0.75em;
+  color: #dddddd;
+}
+
 /* --------------------------------------------------------------------------- */
 
 /* Headings */
@@ -334,6 +340,8 @@ aside{
 
 /* --------------------------------------------------------------------------- */
 
+/* Figure CSS */
+
 figure{
   width: 100%;
   border: 1px solid #16808C;
@@ -349,15 +357,15 @@ figure{
 /* Footer CSS */
 
 footer{
-    border: 1px solid #75B2BF;
-    background-color:#16808C;
-    min-height:150px;
-}
-
-#div-footer{
+  border: 1px solid #75B2BF;
+  background-color:#16808C;
+  min-height:150px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#div-footer{
 }
 
 /* --------------------------------------------------------------------------- */
