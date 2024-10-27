@@ -121,16 +121,25 @@ dark text - black
 header{
     border: 1px solid #16808C;
     background-color: #75B2BF;
-    min-height: 50px;
+    min-height:150px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+}
+
+h1{
 }
 
 nav{
-    border: 1px solid #16808C;
+    border:solid #16808C;
+    border-width: 1px 0;
     background-color: #D98B48;
     min-height: 50px;
     text-align: center;
     padding: 15px;
     color: ivory;
+    width:100%;
+    align-items:center;
 }
 
 body{
@@ -141,7 +150,6 @@ main{
     background-color: #64732F;
     border: 1px solid #16808C;
     min-height: 400px;
-    width:100%;
     overflow:auto;
 }
 
@@ -167,8 +175,7 @@ aside{
 figure{
     clear:both;
     width: 95%;
-    margin: 10px;
-    float: left;
+    margin: 10px auto;
     border: 1px solid #16808C;
     background-color: #16808C;
     padding: 10px;
@@ -176,9 +183,13 @@ figure{
 
 footer{
     clear:both;
-    min-height: 50px;
     border: 1px solid #16808C;
     background-color: #75B2BF;
+    text-align: center;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 img{
@@ -189,6 +200,16 @@ img{
 /* Headings */
 
 h1{
+}
+
+#header-h1{
+  font-size: 3em;
+  width:100%;
+  flex-grow:1;
+  text-decoration:underline;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 h2{
@@ -203,27 +224,111 @@ h4{
 h5{
 }
 
+/* Links */
+
+a{ 
+    color: ivory;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-button{  
+    border: 1px solid #16808C;
+    width:150px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #16808C;
+}
+
+#nav-button:hover{
+    background-color: #0d4d54;
+}
+
+#nav-button:active{
+    background-color: #95c3c8;
+}
+
 /* Assignment Specific CSS */
 
-#iframe-div{
-  float:left;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width:75%;
+th{
+  background-color:#16808C;
+  color:ivory;
+  vertical-align:middle;
+  border: 1px solid #310202;
 }
 
-#iframe-vid-div{
-  float:left;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  width:75%;
+.time-th{
+  background-color:#D98B48;
+  color:black;
+  border: 1px solid #310202;
 }
 
-iframe{
-  width: 840px;
-  height: 540px;
-  border: 3px #16808C;
-  border-style:ridge;
+td{
+  text-align:center;
+  vertical-align:middle;
+  background-color:#75B2BF;
+  height:30px;
+  border: 1px solid #310202;
+}
+
+td:hover {
+  /* for some reason, my background isn't changing color unless I make it for td instead of tr */
+  background:#152123;
+  color:ivory;
+}
+
+.tr-sty:hover {
+  /* text changes color, but the background won't do it for tr */
+  background:#152123;
+  color:ivory;
+}
+
+.cal-td{
+  height:100px;
+  width:100px;
+  text-align:right;
+  vertical-align:top;
+}
+
+.td-date{
+  width:100%;
+  padding:5px 5px 0px 0px;
+  font-weight:bold;
+  text-decoration:underline;
+  float:right;
+}
+
+.td-event-desc{
+  clear:both;
+  width:100%;
+  height:74px;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.td-date-nxt{
+  width:100%;
+  padding:5px 5px 0px 0px;
+  color:#6b6b6b;
+  text-decoration:underline;
+}
+
+.td-date-pre{
+  width:100%;
+  padding:5px 5px 0px 0px;
+  color:#6b6b6b;
+  text-decoration:underline;
+}
+
+tr{
+  height:30px;
+  font-weight:bold;
 }

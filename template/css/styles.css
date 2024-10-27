@@ -1,3 +1,5 @@
+/* --------------------------------------------------------------------------- */
+/* ------------------------------------------ */
 /* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -48,8 +50,9 @@ table {
 	border-spacing: 0;
 }
 
-/*
+/* --------------------------------------------------------------------------- */
 
+/*
 Color Pallet Codes:
 
 #75B2BF - light blue
@@ -59,8 +62,13 @@ Color Pallet Codes:
 #D98B48 - orange
 light text - ivory
 dark text - black
-
 */
+
+/* --------------------------------------------------------------------------- */
+
+/* Google Fonts Embed CSS */
+
+/* ------------------------------------------ */
 
 /* Rajdhani Font Embed CSS Classes */
 
@@ -94,6 +102,8 @@ dark text - black
   font-style: normal;
 }
 
+/* ------------------------------------------ */
+
 /* Nanum Gothic Font Embed CSS Class */
 
 .nanum-gothic-regular {
@@ -102,87 +112,46 @@ dark text - black
   font-style: normal;
 }
 
-/* If I want to have a font set as a default, I can do so like below
+/* If I want to have a font set as 
+   a default, I can do so like below
 
 .nanum-gothic-regular, h1, h2, h3, h4, h5 {
   font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
-} 
-  
-*/
+} */
+
+/* --------------------------------------------------------------------------- */
 
 /* General CSS */
 
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-header{
-    border: 1px solid #16808C;
-    background-color: #75B2BF;
-    min-height: 50px;
+a{
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px #000;
 }
 
-nav{
-    border: 1px solid #16808C;
-    background-color: #D98B48;
-    min-height: 50px;
-    text-align: center;
-    padding: 15px;
-    color: ivory;
-}
-
-body{
-    background-color: #264014;
-}
-
-main{
-    background-color: #64732F;
-    border: 1px solid #16808C;
-    min-height: 400px;
-    overflow:auto;
-}
-
-.container{
-    border: 1px solid #16808C;
-    background-color: #16808C;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    min-height: 400px;
-    max-width: 1200px;
-}
-
-aside{
-    width: 20%;
-    margin: 10px;
-    float:right;
-    min-height: 200px;
-    border: 1px solid #16808C;
-    background-color: #D98B48;
-}
-
-figure{
-    clear:both;
-    width: 40%;
-    margin: 10px;
-    float: left;
-    border: 1px solid #16808C;
-    background-color: #16808C;
-    padding: 10px;
-}
-
-footer{
-    clear:both;
-    border: 1px solid #16808C;
-    background-color: #75B2BF;
+p{
+  line-height: 1.5;
 }
 
 img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
+
+.container{
+}
+
+.div-paragraph{
+}
+
+/* --------------------------------------------------------------------------- */
 
 /* Headings */
 
@@ -201,3 +170,194 @@ h4{
 h5{
 }
 
+.div-heading{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Lists CSS */
+
+ol{
+}
+
+ul{
+}
+
+li{
+}
+
+dl{
+}
+
+dt{
+}
+
+dd{
+}
+
+.div-list{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Body CSS */
+
+body{
+  background-color: #264014;
+  width:90%;
+  margin: 0 auto;
+}
+
+#div-body{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Header CSS */
+
+header{
+  border: 1px solid #75B2BF;
+  background-color: #16808C;
+  min-height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#div-header{
+  width:100%;
+}
+
+#div-header-h1{
+  text-align: center;
+  width:100%;
+  min-height:150px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:3.5em;
+  font-weight:bold;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Nav CSS */
+
+nav{
+  border: 1px solid #16808C;
+  background-color: #D98B48;
+  min-height:50px;
+  text-align: center;
+  color: ivory;
+}
+
+#div-nav{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:5%;
+}
+
+.nav-button{
+  width: 150px;
+  height: 50px;
+  border:solid #6d3411;
+  background-color:#c87a32;
+  border-width:0px 2px 0px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Main CSS */
+
+main{
+  background-color: #64732F;
+  border: 1px solid #16808C;
+  min-height: 400px;
+  /*
+  overflow:auto;
+  */
+}
+
+#div-main{
+  display: flex;
+}
+
+#div-main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #16808C;
+  background-color: #64732F;
+  min-height: 400px;
+  min-width: 70%;
+  max-width: 80%;
+}
+
+#div-main-right{
+}
+
+#div-main-h2{
+}
+
+#div-main-p{
+  padding:10px 25px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Aside CSS */
+
+aside{
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid #16808C;
+  background-color: #75B2BF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#div-aside{
+}
+
+#div-aside-h2{
+}
+
+#div-aside-dl{
+}
+
+/* --------------------------------------------------------------------------- */
+
+figure{
+  width: 100%;
+  border: 1px solid #16808C;
+  background-color: #7d2e15;
+  padding: 10px;
+}
+
+#div-figure{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Footer CSS */
+
+footer{
+    border: 1px solid #75B2BF;
+    background-color:#16808C;
+    min-height:150px;
+}
+
+#div-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------- */
