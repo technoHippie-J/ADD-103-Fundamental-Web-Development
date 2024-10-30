@@ -1,0 +1,417 @@
+/* --------------------------------------------------------------------------- */
+/* ------------------------------------------ */
+ /* Variables */
+
+ :root {
+  --light_primary: #75B2BF;
+  --dark_primary: #16808C;
+  --extra_dark_primary: #0D4D5E;
+  --dark_secondary: #264014;
+  --light_secondary: #64732F;
+  --accent: #D98B48;
+  --dark_accent: #6d3411;
+  --light_text: #dddddd;
+  --muted_light_text: #aaaaaa;
+  --dark_text: black;
+  --main_font: "Rajdhani", sans-serif;
+  --secondary_font: "Nanum Gothic", sans-serif;
+}
+
+/* 
+Example of how to use the variables:
+
+p{
+  font-family: var(--secondary_font);
+  color: var(--light_text);
+}
+
+/*
+Color Pallet Codes:
+
+#75B2BF - light blue
+#16808C - dark blue
+#264014 - dark green
+#64732F - light green
+#D98B48 - orange
+light text - ivory
+dark text - black
+
+*/
+
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*
+Color Pallet Codes:
+
+#75B2BF - light blue
+#16808C - dark blue
+#264014 - dark green
+#64732F - light green
+#D98B48 - orange
+light text - ivory
+dark text - black
+*/
+
+/* --------------------------------------------------------------------------- */
+
+/* Google Fonts Embed CSS */
+
+/* ------------------------------------------ */
+
+/* Rajdhani Font Embed CSS Classes */
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ------------------------------------------ */
+
+/* Nanum Gothic Font Embed CSS Class */
+
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* If I want to have a font set as 
+   a default, I can do so like below
+
+.nanum-gothic-regular, h1, h2, h3, h4, h5 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* --------------------------------------------------------------------------- */
+
+/* General CSS */
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: var(--light_text);
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px #000;
+}
+
+p{
+  line-height: 1.5;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.container{
+}
+
+.div-paragraph{
+}
+
+#copyright{
+  text-align: center;
+  font-size: 0.75em;
+  color: var(--light_text);
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Headings */
+
+h1{
+}
+
+h2{
+}
+
+h3{
+}
+
+h4{
+}
+
+h5{
+}
+
+.div-heading{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Lists CSS */
+
+ol{
+}
+
+ul{
+}
+
+li{
+}
+
+dl{
+  margin: 30px 0px;
+}
+
+dt{
+}
+
+dd{
+  text-indent: 2em;
+  margin: 20px 0 40px;
+  color: var(--muted_light_text);
+}
+
+.div-list{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Body CSS */
+
+body{
+  background-color: var(--dark_secondary);
+  width:90%;
+  margin: 0 auto;
+}
+
+#div-body{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Header CSS */
+
+header{
+  border: 1px solid var(--light_primary);
+  background-color: var(--dark_primary);
+  min-height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#div-header{
+  width:100%;
+}
+
+#div-header-h1{
+  text-align: center;
+  width:100%;
+  min-height:150px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:3.5em;
+  font-weight:bold;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Nav CSS */
+
+nav{
+  border: 1px solid var(--dark_primary);
+  background-color: var(--accent);
+  min-height:50px;
+  text-align: center;
+  color: var(--light_text);
+}
+
+#div-nav{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:5%;
+}
+
+.nav-button{
+  width: 150px;
+  height: 50px;
+  border: solid var(--dark_accent);
+  background-color: var(--accent);
+  border-width: 0px 2px 0px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Main CSS */
+
+main{
+  background-color: var(--light_secondary);
+  border: 1px solid var(--dark_primary);
+  min-height: 400px;
+  /*
+  overflow:auto;
+  */
+}
+
+#div-main{
+  display: flex;
+}
+
+#div-main-content{
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction: column;
+  background-color: var(--extra_dark_primary);
+  border: solid var(--light_primary);
+  border-width: 0px 2px 0px 2px;
+  min-height: 400px;
+  min-width: 30%;
+  width:fit-content;
+  margin:0px auto;
+}
+
+#div-main-right{
+}
+
+#div-main-h2{
+}
+
+#div-main-p{
+  padding:10px 25px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Aside CSS */
+
+aside{
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid var(--dark_primary);
+  background-color: var(--light_primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#div-aside{
+}
+
+#div-aside-h2{
+}
+
+#div-aside-dl{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Figure CSS */
+
+figure{
+  width: 100%;
+  border: 1px solid var(--dark_primary);
+  background-color: var(--dark_accent);
+  padding: 10px;
+}
+
+#div-figure{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Footer CSS */
+
+footer{
+  border: 1px solid var(--light_primary);
+  background-color:var(--dark_primary);
+  min-height:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light_text);
+}
+
+#div-footer{
+}
+
+/* --------------------------------------------------------------------------- */

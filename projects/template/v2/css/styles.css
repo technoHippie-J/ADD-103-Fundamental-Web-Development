@@ -1,0 +1,339 @@
+/* Styles Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Base Styles */
+
+/* .container {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+body{
+    /* CSS Gradient Site Code 
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(8,28,134,1) 38%, rgba(7,53,150,1) 48%, rgba(4,131,201,1) 79%, rgba(0,212,255,1) 100%);
+    /* My code */
+    /* Source: https://www.w3schools.com/cssref/css3_pr_background.php 
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+header{
+    text-align:center;
+    color:white;
+    font-size:2em;
+    min-height:150px;
+    display:flex;
+    align-items:center;
+}
+
+nav{
+    min-height:75px;
+    min-width:90%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+nav li{
+    width:200px;
+    height:50px;
+    background-color:rgba(255, 255, 255, 0.2);
+    border:2px solid rgba(255, 255, 255, 0.5);
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+nav a{
+    list-style-type:none;
+    text-decoration:none;
+    color:ivory;
+}
+
+main{
+    min-height:1000px;
+    min-width:80%;
+    margin:0px 20px;
+    display:flex;
+    justify-content:space-evenly;
+
+}
+
+section{
+    height:fit-content;
+    min-height:950px;
+    margin-top:0px;
+    max-width:77%;
+}
+
+aside{
+    height:fit-content;
+    min-height:450px;
+    max-width:14%;
+}
+
+footer{
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:ivory;
+} */
+
+/* Styles from Advanced Formatting */
+
+/* Styles Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* Styles */
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    /* CSS Generator Code 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+body{
+    /* CSS Gradient Site Code 2 */
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(8,28,134,1) 38%, rgba(7,53,150,1) 48%, rgba(4,131,201,1) 79%, rgba(0,212,255,1) 100%);
+    /* My code */
+    /* Source: https://www.w3schools.com/cssref/css3_pr_background.php */
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+header{
+    text-align:center;
+    color:white;
+    font-size:2em;
+    min-height:150px;
+    display:flex;
+    align-items:center;
+}
+
+nav{
+    height:75px;
+    width:20%;
+    display:flex;
+    align-items:center;
+    justify-content:center;    
+    margin:0 auto;
+    padding:10px 20px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius:25px;
+    /* CSS Generator Code 3 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    /* CSS Generator Code 4 */
+    outline: 2px groove #FFFCFC;
+}
+
+nav li{
+    width:200px;
+    height:50px;
+    background-color:rgba(255, 255, 255, 0.2);
+    border:2px ridge rgba(255, 255, 255, 0.5);
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+nav a{
+    list-style-type:none;
+    text-decoration:none;
+    color:rgb(222, 222, 211);
+}
+
+main{
+    min-height:1000px;
+    min-width:80%;
+    margin:0px 20px;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+section{
+    height:fit-content;
+    min-height:950px;
+    margin-top:0px;
+    max-width:77%;
+}
+
+#printer-img{
+    width:100%;
+    border-radius:5px;
+}
+
+aside{
+    height:fit-content;
+    min-height:450px;
+    max-width:14%;
+}
+
+footer{
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:rgb(222, 222, 211);
+}
+
+.content-p{
+    color:rgb(222, 222, 211);
+    font-size:1.5em;
+    margin:0px 0px 10px;
+    line-height:1.5em;   
+}
+
+#header-title{
+    font-size:2.5em;
+    color:rgb(222, 222, 211);
+    height:75px;
+    margin:0 auto 30px;
+    width:fit-content;
+    text-decoration:underline;
+    text-shadow: 2px 2px 5px #00ffd5;
+}
+
+#aside-content{   
+    color:rgb(222, 222, 211);
+    font-size:1.5em;
+    margin:0px 0px 10px;
+    line-height:1.5em; 
+    text-align:center;
+}
+
+/* Generator Classes 5 & 6 */
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-column {
+    -moz-column-count: 2;
+    -moz-column-gap: 35px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 35px;
+    column-count: 2;
+    column-gap: 35px;
+}
+
+/* My edits to Generator Classes */
+
+.text-column{
+    padding:20px 35px;
+    text-align:justify;
+}
