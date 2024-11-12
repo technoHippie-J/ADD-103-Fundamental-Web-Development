@@ -1,0 +1,23 @@
+Assignment Requirements:
+
+This is a peer-reviewed project. You will demonstrate the project in class (live classes) or link to it in the peer review discussion when you hand it in. You will have to upload this to the server and to Github. Hand in the URL to the cpanel site, and put the link to the Github repository in the comments.
+
+Topic: Resume or Portfolio site - Or you may continue working on a personal project so long as it meets the coding requirements.
+5 pages of original content, no Lorem Ipsum
+
+In the HTML or CSS comments provide links to pages that you used as a reference or to where your images are from if they are not yours
+
+Include the following on each page:
+
+-At least six images
+-Use figure and figcaption with the images
+-Navigation to all of the other pages
+-An original title tag in the head section
+-H1 and H2 tags
+-Floats
+-ID
+-Class
+-Header, nav, footer, main
+-One external style sheet for all styles
+-Variables
+-Google Fonts
