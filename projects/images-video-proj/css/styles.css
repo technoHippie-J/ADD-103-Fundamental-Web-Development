@@ -10,9 +10,6 @@
 html{
     height:100%;
     width:100%;
-}
-
-body{
     /* code below from https://cssgradient.io/ */
 	background: rgb(0,0,0);
 	background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 24%, rgba(50,50,50,1) 68%, rgba(71,71,71,1) 100%);
@@ -20,11 +17,15 @@ body{
 	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 24%, rgba(50,50,50,1) 68%, rgba(71,71,71,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#474747",GradientType=1);
     /* end gradient code */
+}
+
+body{
     width:80%;
     height:100%;
     margin:auto;
     flex-direction:column;
     min-width:fit-content;
+    background-color:rgb(29, 29, 29);
 }
 #body-ethics{}
 
@@ -55,17 +56,32 @@ header{
     width:100%;
     height:50%;
     text-align:center;
+    background-color:rgb(5, 5, 5);
 }
 #header-left-class-div{
     width:100%;
     height:50%;
-    text-align:center;
     flex-direction:column;
+    background-color:rgb(10, 10, 10);
+}
+#header-left-class-top-div{
+    width:60%;
+    height:30%;
+    border:0;
+    text-align:left;
+    text-decoration:underline;
+}
+#header-left-class-bottom-div{
+    width:70%;
+    height:50%;
+    border:0;
+    text-align:center;
 }
 #header-right-div{
     width:75%;
     height:100%;
     min-width:fit-content;
+    background-color:rgb(15, 15, 15);
 }
 
 nav{
@@ -100,8 +116,17 @@ nav{
     color:ivory;
     font-size:1.5em;
     font-weight:bold;
-    border:solid ivory;
-    border-width:0px 1px;
+}
+nav a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.nav-btn:hover{
+    background-color:rgb(50, 50, 50);
+}
+.nav-btn:active{
+    background-color:rgb(255, 255, 255);
 }
 #nav-btn-home{}
 #nav-btn-python{}
@@ -122,10 +147,11 @@ main{
     min-width:fit-content;
 }
 #main-left-div{
-    width:80%;
+    width:85%;
     height:100%;
     flex-direction:column;
-    flex-shrink:0;   /* Prevents shrinking */
+    flex-shrink:0;   /* Prevents shrinking, found at: 
+                        https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
 }
 #main-left-top-div{
     width:100%;
@@ -153,9 +179,10 @@ stop overlapping other divs, so I tried a few things including min-width:fit-con
 flex-shrink:0 I've commented the lines to indicate where experimentation occurred. Not sure 
 what the fix is exactly. */
 #main-right-div{
-    width:20%;
+    width:15%;
     height:100%;
-    flex-shrink:0;   /* prevents shrinking, attempt to prevent an overlap in responsive */
+    flex-shrink:0;   /* prevents shrinking, attempt to prevent an overlap in responsive, found at: 
+                        https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
 }
 #main-right-aside-div{
     width:100%;
@@ -164,18 +191,22 @@ what the fix is exactly. */
 }
 #main-right-aside-h2{
     width:100%;
-    flex-shrink:0; /* Keeps the heading at its content height */
+    flex-shrink:0; /* Keeps the heading at its content height, found at: 
+                      https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
     margin:20px 0px;
     min-width:fit-content;  /* Prevents the heading from shrinking */
 }
 #main-right-aside-ol-div{
     width:100%;
-    flex-grow:1; /* Allows the list to take up remaining space */
-    overflow-y:auto; /* Enables scrolling if the content is too long */
+    flex-grow:1; /* Allows the list to take up remaining space, found at:
+                    https://www.w3schools.com/cssref/css3_pr_flex-grow.php */
+    overflow-y:auto; /* Enables scrolling if the content is too long, found at:
+                        https://www.w3schools.com/cssref/css3_pr_overflow-y.php */
 }
 #main-right-aside-img-div{
     width:100%;
-    flex-shrink:0; /* Keeps the image div at its content height */
+    flex-shrink:0; /* Keeps the image div at its content height, found at: 
+                      https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
     max-width:inherit;
 }
 
@@ -204,7 +235,7 @@ ol{}
 #ol-ethics-links{
     width:70%;
     height:90%;
-    line-height:2.5em;
+    line-height:2em;
     font-size:1.5em;
 }
 
@@ -221,6 +252,11 @@ li{}
 a{
     text-decoration:none;
     color:ivory;
+    width:100%;
+    height:100%;
+}
+a:active{
+    color:black;
 }
 
 aside{}
@@ -248,6 +284,7 @@ h1{}
     margin:0px;
     font-size:3em;
     text-align:center;
+    padding:0px 30px;
 }
 
 h2{}
@@ -255,11 +292,15 @@ h2{}
 }
 #header-left-name-h2{
     margin:0px;
-    font-size:2em;
+    font-size:3em;
+    width:100%;
+    padding:0px 10px;
 }
 #header-left-class-h2{
     margin:0px;
     font-size:3em;
+    width:100%;
+    padding:0px 10px;
 }
 .aside-h2{}
 #main-right-aside-h2{
@@ -274,5 +315,7 @@ h3{}
 .header-h3{}
 #header-left-class-h3{
     margin:0px;
-    font-size:1.75em;
+    font-size:1.5em;
+    width:100%;
+    padding:0px 10px;
 }
