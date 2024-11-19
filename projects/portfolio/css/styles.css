@@ -4,7 +4,7 @@
 	align-items:center;
     color:ivory;
     /* for visualizing layout */
-    border:1px solid rgb(0, 0, 0);
+    /* border:1px solid rgb(0, 0, 0); */
 }
 
 html{
@@ -38,6 +38,9 @@ header{
     width:100%;
     height:25%;
     min-width:fit-content;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
 }
 #header-top-div{
     width:100%;
@@ -57,17 +60,19 @@ header{
     height:50%;
     text-align:center;
     background-color:rgb(5, 5, 5);
+    border-right:2px solid black;
 }
 #header-left-class-div{
     width:100%;
     height:50%;
     flex-direction:column;
-    background-color:rgb(10, 10, 10);
+    background-color:rgb(15, 15, 15);
+    border-right:2px solid black;
+    border-top:2px solid black;
 }
 #header-left-class-top-div{
     width:60%;
     height:30%;
-    border:0;
     text-align:left;
     text-decoration:underline;
 }
@@ -81,7 +86,7 @@ header{
     width:75%;
     height:100%;
     min-width:fit-content;
-    background-color:rgb(15, 15, 15);
+    background-color:rgb(20, 20, 20);
 }
 
 nav{
@@ -91,6 +96,7 @@ nav{
 #nav-div{
     width:100%;
     height:20%;
+    border-top: 2px solid black;
 }
 #ethics-nav{
     width:100%;
@@ -113,7 +119,6 @@ nav{
     justify-content:center;
     align-items:center;
     text-decoration:none;
-    color:ivory;
     font-size:1.5em;
     font-weight:bold;
 }
@@ -124,9 +129,16 @@ nav a{
 }
 .nav-btn:hover{
     background-color:rgb(50, 50, 50);
+    filter:drop-shadow(-1px -1px 0 rgb(255, 255, 255)); 
 }
 .nav-btn:active{
     background-color:rgb(255, 255, 255);
+}
+.nav-btn.active{
+    filter:drop-shadow(-1px -1px 0 rgb(255, 255, 255));        
+}
+a.active{
+    filter:drop-shadow(-1px -1px 0 rgb(255, 255, 255));
 }
 #nav-btn-home{}
 #nav-btn-python{}
@@ -134,7 +146,41 @@ nav a{
 #nav-btn-ux-ui{}
 #nav-btn-ethics{}
 
-
+/* Index */
+#main-div{
+    width:100%;
+    height:70%;
+    border: 2px solid black;
+}
+#main-home{
+    min-width:fit-content;
+}
+#main-home-div{
+    width:100%;
+    height:100%;
+    flex-direction:column;
+    flex-shrink:0;   /* Prevents shrinking, found at: 
+                        https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
+}
+#main-home-top-div{
+    width:100%;
+    height:100%;
+}
+#main-home-top-full-div{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+#home-duck{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+#main-home-bottom-div{
+    width:100%;
+    height:30%;
+}
+/* Ethics */
 main{
     width:100%;
     height:100%;
@@ -183,6 +229,7 @@ what the fix is exactly. */
     height:100%;
     flex-shrink:0;   /* prevents shrinking, attempt to prevent an overlap in responsive, found at: 
                         https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
+    border-left: 2px solid black;
 }
 #main-right-aside-div{
     width:100%;
@@ -202,13 +249,34 @@ what the fix is exactly. */
                     https://www.w3schools.com/cssref/css3_pr_flex-grow.php */
     overflow-y:auto; /* Enables scrolling if the content is too long, found at:
                         https://www.w3schools.com/cssref/css3_pr_overflow-y.php */
+    overflow-x:hidden;
 }
-#main-right-aside-img-div{
+
+#main-right-aside-ol-div::-webkit-scrollbar{
+    width:5px;
+}
+
+#main-right-aside-ol-div::-webkit-scrollbar-thumb{
+    background:rgb(50, 50, 50);
+    border-radius:10px;
+}
+
+#main-right-aside-ol-div::-webkit-scrollbar-thumb:hover{
+    background:rgb(147, 147, 147);
+}
+
+#main-right-aside-img-div {
+    box-sizing:border-box;
     width:100%;
-    flex-shrink:0; /* Keeps the image div at its content height, found at: 
-                      https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
-    max-width:inherit;
+    height:auto;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+    border:4px solid black;
 }
+
 
 footer{
     width:100%;
@@ -218,6 +286,8 @@ footer{
 #footer-div{
     width:100%;
     height:5%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 #footer-content-div{
     height:100%;
@@ -227,7 +297,9 @@ footer{
 
 img{}
 #img-ethics-duck-01{
-    width:90%;
+    width:100%;
+    height:auto;
+    display:block;
 }
 
 ol{}
@@ -251,7 +323,7 @@ li{}
 
 a{
     text-decoration:none;
-    color:ivory;
+    color:rgb(184, 184, 184);
     width:100%;
     height:100%;
 }
@@ -319,3 +391,178 @@ h3{}
     width:100%;
     padding:0px 10px;
 }
+
+
+/* ------- Subpages ------- */
+
+
+/* web-page */
+
+.subpage-container{}
+
+.subpage-footer-p{}
+
+#web-page-body{}
+
+#web-page-header-div{}
+
+#web-page-header{}
+
+#web-page-main-div{}
+
+#web-page-main{}
+
+#web-page-footer-div{}
+
+#web-page-footer{}
+
+#web-page-footer-p{}
+
+
+/* web-html */
+
+#web-html-body{}
+
+#web-html-header-div{}
+
+#web-html-header{}
+
+#web-html-main-div{}
+
+#web-html-main{}
+
+#web-html-footer-div{}
+
+#web-html-footer{}
+
+#web-html-footer-p{}
+
+
+/* web-css */
+
+#web-css-body{}
+
+#web-css-header-div{}
+
+#web-css-header{}
+
+#web-css-main-div{}
+
+#web-css-main{}
+
+#web-css-footer-div{}
+
+#web-css-footer{}
+
+#web-css-footer-p{}
+
+
+/* python-result */
+
+#python-result-body{}
+
+#python-result-header-div{}
+
+#python-result-header{}
+
+#python-result-main-div{}
+
+#python-result-main{}
+
+#python-result-footer-div{}
+
+#python-result-footer{}
+
+#python-result-footer-p{}
+
+
+/* python-code */
+
+.code-line{
+    
+}
+
+#python-code-body{
+    background-color:#151515;
+    width:100%;
+}
+
+#python-code-header-div{
+    width:80%;
+    margin:auto;
+}
+
+#python-code-header{
+    width:100%;
+}
+
+#python-code-main-div{
+    width:80%;
+    height:100%;
+    margin:auto;
+}
+
+#python-code-main{
+    width:100%;
+    height:100%;
+    margin:auto;
+    border:1px solid black;    
+    background-color:#1f1f1f;
+}
+
+#python-code-footer-div{
+    width:100%;
+    height:auto;
+    margin:auto;    
+    background-color:#1f1f1f;
+}
+
+#python-code-footer{
+    width:100%;
+    margin:auto;
+}
+
+#python-code-footer-p{
+    width:100%;
+    margin:auto;
+    color:#1f1f1f;  
+    text-align:center; 
+}
+
+
+/* ethics-post */
+
+#ethics-post-body{}
+
+#ethics-post-header-div{}
+
+#ethics-post-header{}
+
+#ethics-post-main-div{}
+
+#ethics-post-main{}
+
+#ethics-post-footer-div{}
+
+#ethics-post-footer{}
+
+#ethics-post-footer-p{}
+
+
+/* ethics-paper */
+
+#ethics-paper-body{}
+
+#ethics-paper-header-div{}
+
+#ethics-paper-header{}
+
+#ethics-paper-main-div{}
+
+#ethics-paper-main{}
+
+#ethics-paper-footer-div{}
+
+#ethics-paper-footer{}
+
+#ethics-paper-footer-p{}
