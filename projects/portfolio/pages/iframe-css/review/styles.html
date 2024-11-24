@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Display Example</title>
+    <style>
+        pre{
+            background-color:#010101;
+            padding:10px;
+            overflow-x:auto;
+        }
+        code{
+            font-family:'Courier New', Courier, monospace;
+            color:#ffffff;
+            white-space:pre-wrap;
+            word-wrap:break-word;
+            overflow-wrap:break-word;
+        }
+        html::-webkit-scrollbar{
+            width:5px;
+        }
+        html::-webkit-scrollbar-thumb{
+            background:rgb(50, 50, 50);
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+<pre><code>
+/* Set colors for the page */
+/* I decided I wanted the body to have a different color than the page background, making it more of a visual container */
+body{
+    background-color: rgb(37, 37, 37);
+    color: rgb(228, 228, 228); /* this is the font color*/
+    width: 60%; /* centers the body content for a pc browser, but would probably look too thin on a phone screen */
+    margin: 10px auto;
+    border-radius: 5%;
+    border:2px solid #fcee0a;
+}
+
+/* just to give the page a background color separate from the rest of the content */
+html{
+    background-color:rgb(0, 0, 0);
+}
+
+/* create styles for the h1 tag */
+
+/* Sample - pick your own colors and settings. Make sure to include the ; at the end of the line*/
+
+h1{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 2.5em;
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin: 0px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/* added style for h4 tag */
+
+h4{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 5px auto 10px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/* added style for h5 tag */
+
+h5{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 1.125em;
+    letter-spacing: 1.75px;
+    text-align: center;
+    margin: 10px auto 20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/* create styles for the h2 tag */
+h2{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 1.875em;
+    letter-spacing: 4px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px auto;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/* create styles for the h3 tag */
+
+h3{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 125%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px auto;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/* create styles for the p tag */
+
+img{
+    width: 75%;
+    display: block;
+    margin: 10px auto; 
+    box-shadow:5px 5px 5px #000000;
+    /* this set of 3 commands centers. 10px is spacing top and bottom, auto is left and right*/
+}
+
+/* create the style for the footer section */
+
+footer{
+    text-align: center;
+    font-size: 0.75em;
+    font-style: italic;
+    margin: 50px 10% 0px;
+}
+
+/* create style for the blockquote */
+
+blockquote{
+    color: #fcee0a;
+    font-family: impact;
+    font-size: 1.125em;
+    text-align: center;
+    margin: 0px 10%;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/* apply width constraints to the <p> text */
+
+p{
+    width: 85%;
+    margin: 10px auto;
+    text-align: justify;
+    font-size: 125%;
+}
+
+/* I created a div because the paragraph wasn't formatting the way the others were. I'm guessing this is because it includes a blockquote(?) which must have thrown off the formatting for the paragraph following it, so I fixed it by doing this. I had considered using a class attribute, but thought I'd wait until we got a bit further to start using them. */
+
+div{
+    width: 85%;
+    margin: 10px auto;
+    text-align: justify;
+    font-size: 125%;
+}
+
+/* Decided I needed a class anyway to achieve the spacing I wanted */
+
+.first_p{
+    width: 85%;
+    margin: 20px auto 10px;
+    text-align: justify;
+}
+
+/* iframe specific styles for compatibility */
+html::-webkit-scrollbar{
+    width:5px;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(50,50,50);
+    border-radius:5px;
+}
+html{
+    width:100%;
+}
+</code></pre>
+</body>
+</html>

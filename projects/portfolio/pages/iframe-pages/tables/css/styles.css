@@ -1,0 +1,346 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+
+Color Pallet Codes:
+
+#75B2BF - light blue
+#16808C - dark blue
+#264014 - dark green
+#64732F - light green
+#D98B48 - orange
+light text - ivory
+dark text - black
+
+*/
+
+/* Rajdhani Font Embed CSS Classes */
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Nanum Gothic Font Embed CSS Class */
+
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* If I want to have a font set as a default, I can do so like below
+
+.nanum-gothic-regular, h1, h2, h3, h4, h5 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+  
+*/
+
+/* General CSS */
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    border: 1px solid #16808C;
+    background-color: #75B2BF;
+    min-height:150px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+}
+
+h1{
+}
+
+nav{
+    border:solid #16808C;
+    border-width: 1px 0;
+    background-color: #D98B48;
+    min-height: 50px;
+    text-align: center;
+    padding: 15px;
+    color: ivory;
+    width:100%;
+    align-items:center;
+}
+
+body{
+    background-color: #264014;
+}
+
+main{
+    background-color: #64732F;
+    border: 1px solid #16808C;
+    min-height: 400px;
+    overflow:auto;
+}
+
+.container{
+    border: 1px solid #16808C;
+    background-color: #16808C;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    min-height: 400px;
+    max-width: 1200px;
+}
+
+aside{
+    width: 20%;
+    margin: 10px;
+    float:right;
+    min-height: 200px;
+    border: 1px solid #16808C;
+    background-color: #D98B48;
+}
+
+figure{
+    clear:both;
+    width: 95%;
+    margin: 10px auto;
+    border: 1px solid #16808C;
+    background-color: #16808C;
+    padding: 10px;
+}
+
+footer{
+    clear:both;
+    border: 1px solid #16808C;
+    background-color: #75B2BF;
+    text-align: center;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Headings */
+
+h1{
+}
+
+#header-h1{
+  font-size: 3em;
+  width:100%;
+  flex-grow:1;
+  text-decoration:underline;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+h2{
+}
+
+h3{
+}
+
+h4{
+}
+
+h5{
+}
+
+/* Links */
+
+a{ 
+    color: ivory;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-button{  
+    border: 1px solid #16808C;
+    width:150px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #16808C;
+}
+
+#nav-button:hover{
+    background-color: #0d4d54;
+}
+
+#nav-button:active{
+    background-color: #95c3c8;
+}
+
+/* Assignment Specific CSS */
+
+th{
+  background-color:#16808C;
+  color:ivory;
+  vertical-align:middle;
+  border: 1px solid #310202;
+}
+
+.time-th{
+  background-color:#D98B48;
+  color:black;
+  border: 1px solid #310202;
+}
+
+td{
+  text-align:center;
+  vertical-align:middle;
+  background-color:#75B2BF;
+  height:30px;
+  border: 1px solid #310202;
+}
+
+td:hover {
+  /* for some reason, my background isn't changing color unless I make it for td instead of tr */
+  background-color:#152123;
+  color:ivory;
+}
+
+.tr-sty:hover {
+  /* text changes color, but the background won't do it for tr */
+  background-color:#152123;
+  color:ivory;
+}
+
+.cal-td{
+  height:100px;
+  width:100px;
+  text-align:right;
+  vertical-align:top;
+}
+
+.td-date{
+  width:100%;
+  padding:5px 5px 0px 0px;
+  font-weight:bold;
+  text-decoration:underline;
+  float:right;
+}
+
+.td-event-desc{
+  clear:both;
+  width:100%;
+  height:74px;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.td-date-nxt{
+  width:100%;
+  padding:5px 5px 0px 0px;
+  color:#6b6b6b;
+  text-decoration:underline;
+}
+
+.td-date-pre{
+  width:100%;
+  padding:5px 5px 0px 0px;
+  color:#6b6b6b;
+  text-decoration:underline;
+}
+
+tr{
+  height:30px;
+  font-weight:bold;
+}
+
+/* iframe specific styles for compatibility */
+html::-webkit-scrollbar{
+    width:5px;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(50,50,50);
+    border-radius:5px;
+}
+html{
+    width:100%;
+}

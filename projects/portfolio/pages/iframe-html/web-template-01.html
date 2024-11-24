@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Display Example</title>
+    <style>
+        pre{
+            background-color:#010101;
+            padding:10px;
+            overflow-x:auto;
+        }
+        code{
+            font-family:'Courier New', Courier, monospace;
+            color:#ffffff;
+            white-space:pre-wrap;
+            word-wrap:break-word;
+            overflow-wrap:break-word;
+        }
+        html::-webkit-scrollbar{
+            width:5px;
+        }
+        html::-webkit-scrollbar-thumb{
+            background:rgb(50, 50, 50);
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;images/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Rajdhani:wght@300;400;500;600;700&display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+    &lt;title&gt;Template&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;div-body&quot; class=&quot;container&quot;&gt;
+        &lt;header&gt;
+            &lt;div id=&quot;div-header&quot; class=&quot;container&quot;&gt;
+                &lt;div id=&quot;div-header-h1&quot; class=&quot;div-heading&quot;&gt;
+                    &lt;h1&gt;Template&lt;/h1&gt;
+                &lt;/div&gt;
+                &lt;nav&gt;
+                    &lt;div id=&quot;div-nav&quot; class=&quot;container&quot;&gt;
+                        &lt;div class=&quot;nav-button&quot;&gt;
+                            &lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;nav-button&quot;&gt;
+                            &lt;a href=&quot;pages/about.html&quot;&gt;About&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;nav-button&quot;&gt;
+                            &lt;a href=&quot;pages/services.html&quot;&gt;Services&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;nav-button&quot;&gt;
+                            &lt;a href=&quot;pages/contact.html&quot;&gt;Contact&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;!--
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        --&gt;
+                    &lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;div id=&quot;div-main&quot; class=&quot;container&quot;&gt;
+                &lt;div id=&quot;div-main-content&quot; class=&quot;container container-content&quot;&gt;
+                    &lt;div id=&quot;div-main-h2&quot; class=&quot;div-heading&quot;&gt;
+                        &lt;h2&gt;Main&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;div-main-p&quot; class=&quot;div-paragraph&quot;&gt;
+                        &lt;p&gt;
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis tempore, libero officia in, eos minima adipisci aliquid vero consequuntur quasi maxime nobis asperiores, explicabo et quidem harum commodi repellendus placeat?
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;div-main-right&quot;&gt;
+                    &lt;aside&gt;
+                        &lt;div id=&quot;div-aside&quot; class=&quot;container&quot;&gt;
+                            &lt;div id=&quot;div-aside-h2&quot; class=&quot;div-heading&quot;&gt;
+                                &lt;h2&gt;Aside&lt;/h2&gt;
+                            &lt;/div&gt;
+                            &lt;div id=&quot;div-aside-dl&quot; class=&quot;div-list&quot;&gt;
+                                &lt;dl&gt;
+                                    &lt;dt&gt;Item 1&lt;/dt&gt;
+                                    &lt;dd&gt;Item 1 Description&lt;/dd&gt;
+                                    &lt;dt&gt;Item 2&lt;/dt&gt;
+                                    &lt;dd&gt;Item 2 Description&lt;/dd&gt;
+                                    &lt;dt&gt;Item 3&lt;/dt&gt;
+                                    &lt;dd&gt;Item 3 Description&lt;/dd&gt;
+                                &lt;/dl&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/aside&gt;
+                    &lt;figure&gt;
+                        &lt;div id=&quot;div-figure&quot; class=&quot;container&quot;&gt;
+                            &lt;img src=&quot;images/3d-printer.webp&quot; alt=&quot;&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/figure&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;div id=&quot;div-footer&quot; class=&quot;container&quot;&gt;
+                &lt;div id=&quot;copyright&quot;&gt;           
+                    &lt;p&gt;&copy; Tony Janus, 2024&lt;/p&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
+        &lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</body>
+</html>

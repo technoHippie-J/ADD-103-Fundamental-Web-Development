@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Display Example</title>
+    <style>
+        pre{
+            background-color:#010101;
+            padding:10px;
+            overflow-x:auto;
+        }
+        code{
+            font-family:'Courier New', Courier, monospace;
+            color:#ffffff;
+            white-space:pre-wrap;
+            word-wrap:break-word;
+            overflow-wrap:break-word;
+        }
+        html::-webkit-scrollbar{
+            width:5px;
+        }
+        html::-webkit-scrollbar-thumb{
+            background:rgb(50, 50, 50);
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+<pre><code>
+/* ---------------------- layout ------------------------- */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    background-color: ivory;
+    color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    min-width: 500px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    min-height: 80px;
+    text-align: center;
+}
+
+h2 {
+    color: navy;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: navy;
+}
+
+img {
+    width: 500px;
+}
+
+/* iframe specific styles for compatibility */
+html::-webkit-scrollbar{
+    width:5px;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(50,50,50);
+    border-radius:5px;
+}
+html{
+    width:100%;
+}
+</code></pre>
+</body>
+</html>

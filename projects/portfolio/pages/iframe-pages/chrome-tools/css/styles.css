@@ -1,0 +1,101 @@
+body{
+    background: #93be95;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#575300;
+    margin-left: 40px;
+    line-height: 1.5;
+}
+
+h1{
+    color:#924d00;
+    text-align: center;
+    font-family: fangsong;
+    text-decoration:underline;
+}
+
+h2{
+    margin-left: 5%;
+}
+
+p{
+    margin-left: 40px;
+    text-align: center;
+}
+
+img{
+    width: 60%;
+    margin: 10px 0px 20px 15%;
+    padding: 15px;
+    background-color:#a4bf7b;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ffffc6;
+}
+
+ul{
+    list-style-type: disclosure-closed;
+    margin-left: 10%;
+    color:#b63f2b;
+    background-color:#f4edb9;
+    width: fit-content;
+    padding: 10px 15px 10px 35px;
+    float:left;
+    border-style:dashed;
+}
+
+ol{
+    list-style-type: square;
+    margin-left: 30px;
+    color:#556928;
+    padding: 10px 15px 10px 35px;
+    background-color:#f4edb9;
+    width: fit-content;
+    float:left;
+    border-style:inset;
+}
+
+dl{
+    color:#c52e00;
+    padding: 10px 15px;
+    background-color:#f4edb9;
+    width: fit-content;
+    float: left;
+    margin-left: 30px;
+    border-style: ridge;
+    font-family:math;
+}
+
+dt{
+    color:#2a8d00;
+    font-family:fantasy;
+}
+
+dd{
+    color:#934c00;
+    font-family:cursive;
+}
+
+figure{
+    background-color:#638037;
+    width: auto;
+    
+}
+
+figcaption{
+    color:#eecd9c;
+    float:right;
+    background-color:#703b0c;
+    padding: 20px;
+}
+
+/* iframe specific styles for compatibility */
+html::-webkit-scrollbar{
+    width:5px;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(50,50,50);
+    border-radius:5px;
+}
+html{
+    width:100%;
+}

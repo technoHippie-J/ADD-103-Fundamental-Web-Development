@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Display Example</title>
+    <style>
+        pre{
+            background-color:#010101;
+            padding:10px;
+            overflow-x:auto;
+        }
+        code{
+            font-family:'Courier New', Courier, monospace;
+            color:#ffffff;
+            white-space:pre-wrap;
+            word-wrap:break-word;
+            overflow-wrap:break-word;
+        }
+        html::-webkit-scrollbar{
+            width:5px;
+        }
+        html::-webkit-scrollbar-thumb{
+            background:rgb(50, 50, 50);
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+<pre><code>
+/* Styles */
+
+/* I worked on this over a few days and experimented with some new attributes I found in google searches. I'm sure there are more efficient ways of doing things, and even tonight I found and deleted a few things that ended up not doing anything anymore due to other changes I had made. There may be other lines in here that fixed something when I had a problem, but no longer function as fixes because of other fixes I made elsewhere. 
+
+This assignment was a fun one to experiment with, but Google is not the best teacher and I look forward to seeing more structured instruction on flexboxes in class (if we ever do those, idk, otherwise I'll look for tutorials one day), as they seem very powerful. */
+
+body{
+    background-color: #5E4029;
+}
+
+header{
+    background-color: #3F5144;
+    box-sizing: border-box; /* includes padding and border in width and height, fixes a div extending out over the others*/
+    border: 2px solid #FCBD63;
+    height: auto;
+    min-height: 150px; /* prevents header from shrinking below the height necessary for text to remain visible and easily readable, but combined with height:auto, allows it to grow if screen width shrinks and text wraps to additional lines */
+    margin: 5px auto;
+    color: #FCBD63;
+    text-align: center;
+    width: 100%;
+}
+
+/* grabbed parisienne-regular from google fonts as it has a Christmas-y feel */
+.parisienne-regular {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    text-decoration: underline;
+    font-family: "Parisienne", cursive;
+    font-size: 3.5em;
+}
+
+main{
+    width: 100%;
+    margin: auto;
+}
+
+.container{
+    display: flex; /* turns div into flex container */
+    background-color: #3F5144;
+    border: 2px solid #FCBD63;
+    width: 50%;
+    margin: 0px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FCBD63;
+    text-align: center;
+}
+
+#side-by-side{
+    width: 100%;
+    display: flex; /* turns div into flex container */
+    justify-content: center; /* aligns flex items to center horizontally */
+    gap: 0.5%; /* provides a specificly sized gap between divs */
+}
+
+#nicholas-image-div{
+    margin: 30px 20px;
+    width: 30%;
+}
+
+#st-nicholas-pic{
+    max-width: 100%; /* allows image size to adapt to shrinking containers */
+    height: auto;
+    margin: 25px auto; 
+    box-shadow: 5px 5px 5px #000000;
+}
+
+#nicholas-paragraph-div{
+    width: 70%;
+    margin: 0px auto;
+}
+
+h2{
+    text-decoration: underline;
+    font-family: "Parisienne", cursive;
+    font-size: 1.5em;
+}
+
+#nicholas-text{
+    padding: 2% 10px;
+    line-height: 2em;
+}
+
+#tradition-paragraph-div{
+    width: 70%;
+    margin: 0px auto;
+}
+
+#tradition-heading{
+    text-decoration: underline;
+    font-family: "Parisienne", cursive;
+    font-size: 1.5em;
+}
+
+#tradition-text{
+    padding: 2% 10px;
+    line-height: 2em;
+}
+
+#st-nicholas-image-pair{
+    width: 30%;
+    margin: 10px 10px 10px 0px;
+    display: inline-grid; /* provides a grid layout for precise placement, keeping element's position inline with content around it */
+    gap: 2%; /* provides a specificly sized gap between divs */
+}
+
+#st-nicholas-children-pic{
+    max-width: 90%; /* allows image size to adapt to shrinking containers while preventing it from getting larger than intended design*/
+    margin: auto;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+#st-nicholas-old-pic{
+    max-width: 90%; /* allows image size to adapt to shrinking containers while preventing it from getting larger than intended design*/
+    margin: auto;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+#krampus-div{
+    background-color: #3F5144;
+    border: 2px solid #FCBD63;
+    margin: 5px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2em;
+    color: #FCBD63;
+    display: flex; /* turns div into flex container */
+    align-items: center; /* centers flex items vertically in middle of container, and prevents image from stretching to fill the container. */
+}
+
+#krampus-img{
+    max-width: 40%;
+    margin: 10px 0px 10px 15px;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+h3{
+    text-decoration: underline;
+    font-family: "Parisienne", cursive;
+    font-size: 3em;
+    margin: 20px auto 20px;
+}
+
+#krampus-txt-div{
+    width: 55%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 1% 10px;
+}
+
+footer{
+    background-color: #3F5144;
+    border: 2px solid #FCBD63;
+    height: auto;
+    margin: 5px auto 2px;
+}
+
+#copyright{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2em;
+    color: #FCBD63;
+    text-align: center;
+    margin: 10px auto 0px;
+}
+
+#gpt-disclaimer{
+    text-align: center;
+    font-size: 0.75em;
+    font-style: italic;
+    color: #FCBD63;
+    margin: 0px auto 10px;
+    padding: 0px 5px 0px;
+}
+
+/* iframe specific styles for compatibility */
+html::-webkit-scrollbar{
+    width:5px;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(50,50,50);
+    border-radius:5px;
+}
+html{
+    width:100%;
+}
+</code></pre>
+</body>
+</html>

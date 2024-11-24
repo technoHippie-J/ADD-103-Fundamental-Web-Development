@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Table Basics</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="header-h1">
+                <h1>Styling</h1>
+            </div>
+            <nav>
+                <div id="nav-button">
+                    <a href="../index.html">Table Basics</a>
+                </div>
+                <div id="nav-button">
+                    <a href="styling-tables.html">Styling Tables</a>
+                </div>
+                <div id="nav-button">
+                    <a href="calendar.html">Creating a Calendar</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <table width="80%">
+                <tr class="tr-sty">
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                <tr class="tr-sty">
+                    <th class="time-th">9:00 am</th>
+                    <td class="td-mon"></td>
+                    <td class="td-tue"></td>
+                    <td class="td-wed"></td>
+                    <td class="td-thu"></td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>
+                <tr class="tr-sty">
+                    <th class="time-th">10:00 am</th>
+                    <td class="td-mon"></td>
+                    <td class="td-tue"></td>
+                    <td class="td-wed"></td>
+                    <td class="td-thu"></td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>
+                <tr class="tr-sty">
+                    <th class="time-th">11:00 am</th>
+                    <td class="td-mon"></td>
+                    <td class="td-tue"></td>
+                    <td class="td-wed"></td>
+                    <td class="td-thu"></td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>
+                <tr class="tr-sty">
+                    <th class="time-th">12:00 pm</th>
+                    <td class="td-mon"></td>
+                    <td class="td-tue" rowspan="6">Tutoring</td>
+                    <td class="td-wed"></td>
+                    <td class="td-thu" rowspan="6">Tutoring</td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>
+                <tr class="tr-sty">
+                    <th class="time-th">1:00 pm</th>
+                    <td class="td-mon" rowspan="2">Python</td>
+                    <td class="td-wed" rowspan="2">Python</td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>                
+                <tr class="tr-sty">
+                    <th class="time-th">2:00 pm</th>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>                
+                <tr class="tr-sty">
+                    <th class="time-th">3:00 pm</th>
+                    <td class="td-mon" rowspan="2">Web Dev</td>
+                    <td class="td-wed" rowspan="2">Web Dev</td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>                
+                <tr class="tr-sty">
+                    <th class="time-th">4:00 pm</th>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>                
+                <tr class="tr-sty">
+                    <th class="time-th">5:00 pm</th>
+                    <td class="td-mon" rowspan="2">Tutoring</td>
+                    <td class="td-wed" rowspan="2">Tutoring</td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>                
+                <tr class="tr-sty">
+                    <th class="time-th">6:00 pm</th>
+                    <td class="td-tue"></td>
+                    <td class="td-thu"></td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>                
+                <tr class="tr-sty">
+                    <th class="time-th">7:00 pm</th>
+                    <td class="td-mon"></td>
+                    <td class="td-tue"></td>
+                    <td class="td-wed"></td>
+                    <td class="td-thu"></td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>                
+                <tr class="tr-sty">
+                    <th class="time-th">8:00 pm</th>
+                    <td class="td-mon"></td>
+                    <td class="td-tue"></td>
+                    <td class="td-wed"></td>
+                    <td class="td-thu"></td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>                
+                <tr class="tr-sty">
+                    <th class="time-th">9:00 pm</th>
+                    <td class="td-mon"></td>
+                    <td class="td-tue"></td>
+                    <td class="td-wed"></td>
+                    <td class="td-thu"></td>
+                    <td class="td-fri"></td>
+                    <td class="td-sat"></td>
+                    <td class="td-sun"></td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p>&copy; Tony Janus, 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

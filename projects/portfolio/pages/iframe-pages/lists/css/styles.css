@@ -1,0 +1,114 @@
+body{
+    height:900px;
+    background-color:rgb(102, 9, 9);
+}
+
+.container{
+    display:flex;
+    width:auto;
+    height:60%;
+    align-items:middle;
+}
+
+header{
+    height:fit-content;
+    width:auto;
+    background-color:rgb(102, 9, 9);
+    text-align:center;
+    color:#d6d868;
+    text-shadow: 2px 2px 2px #ff0000;
+}
+
+footer{
+    height:1%;
+    width:auto;
+    background-color:rgb(102, 9, 9);
+}
+
+#page{
+    width:80%;
+    height:auto;
+    margin:auto;
+    padding:50px 0px;
+    background-color:rgb(199, 181, 158);
+    display:flex;
+    justify-content:space-evenly;
+    border-radius:10px;
+    border-style:dashed;
+    border-width:2px;
+    border-color:#000;
+    box-shadow: inset -2px 2px 5px 2px rgba(255, 255, 255, 155), inset 2px -2px 5px 2px rgba(0, 0, 0, 155);
+}
+
+#unordered{
+    width:25%;
+    height:fit-content;
+    background-color:rgb(160, 36, 14);
+}
+
+#ordered{
+    width:25%;
+    height:fit-content;
+    background-color:rgb(160, 36, 14);
+}
+
+#description{
+    width:25%;
+    height:fit-content;
+    background-color:rgb(160, 36, 14);
+}
+
+.list-box{
+    border-radius:15px;
+    padding:30px 60px 30px 30px;
+    color:rgb(199, 181, 158);
+    box-shadow: inset -2px 2px 5px 2px rgba(255, 255, 255, 155), inset 2px -2px 5px 2px rgba(0, 0, 0, 155);
+    line-height:1.5;
+    border-color:#a3a53e;
+    border-style:double;
+    border-width:2px;
+}
+
+dt{
+    color:#c0bc80;
+    font-family:"Bebas Neue";
+    font-size:2em;
+}
+
+dd{
+    color:#a3a53e;
+    font-family:"Bebas Neue";
+}
+
+#ballot{
+    list-style-type: "\2610"; /* Unicode for Ballot Box */
+    text-indent:5px;
+}
+
+#lighthouse{
+    list-style-type: "\26EF"; /* Unicode for Map Symbol for Lighthouse */
+    text-indent:5px;
+}
+
+h2{
+    text-decoration:underline;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* https://fonts.google.com/selection/embed */
+
+/* iframe specific styles for compatibility */
+html::-webkit-scrollbar{
+    width:5px;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(50,50,50);
+    border-radius:5px;
+}
+html{
+    width:100%;
+}

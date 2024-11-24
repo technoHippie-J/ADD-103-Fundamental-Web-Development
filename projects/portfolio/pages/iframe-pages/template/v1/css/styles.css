@@ -1,0 +1,384 @@
+/* --------------------------------------------------------------------------- */
+/* ------------------------------------------ */
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/*
+Color Pallet Codes:
+
+#75B2BF - light blue
+#16808C - dark blue
+#264014 - dark green
+#64732F - light green
+#D98B48 - orange
+light text - ivory
+dark text - black
+*/
+
+/* --------------------------------------------------------------------------- */
+
+/* Google Fonts Embed CSS */
+
+/* ------------------------------------------ */
+
+/* Rajdhani Font Embed CSS Classes */
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ------------------------------------------ */
+
+/* Nanum Gothic Font Embed CSS Class */
+
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* If I want to have a font set as 
+   a default, I can do so like below
+
+.nanum-gothic-regular, h1, h2, h3, h4, h5 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* --------------------------------------------------------------------------- */
+
+/* General CSS */
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px #000;
+}
+
+p{
+  line-height: 1.5;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.container{
+}
+
+.div-paragraph{
+}
+
+#copyright{
+  text-align: center;
+  font-size: 0.75em;
+  color: #dddddd;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Headings */
+
+h1{
+}
+
+h2{
+}
+
+h3{
+}
+
+h4{
+}
+
+h5{
+}
+
+.div-heading{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Lists CSS */
+
+ol{
+}
+
+ul{
+}
+
+li{
+}
+
+dl{
+}
+
+dt{
+}
+
+dd{
+}
+
+.div-list{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Body CSS */
+
+body{
+  background-color: #264014;
+  width:90%;
+  margin: 0 auto;
+}
+
+#div-body{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Header CSS */
+
+header{
+  border: 1px solid #75B2BF;
+  background-color: #16808C;
+  min-height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#div-header{
+  width:100%;
+}
+
+#div-header-h1{
+  text-align: center;
+  width:100%;
+  min-height:150px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:3.5em;
+  font-weight:bold;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Nav CSS */
+
+nav{
+  border: 1px solid #16808C;
+  background-color: #D98B48;
+  min-height:50px;
+  text-align: center;
+  color: ivory;
+}
+
+#div-nav{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:5%;
+}
+
+.nav-button{
+  width: 150px;
+  height: 50px;
+  border:solid #6d3411;
+  background-color:#c87a32;
+  border-width:0px 2px 0px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Main CSS */
+
+main{
+  background-color: #64732F;
+  border: 1px solid #16808C;
+  min-height: 400px;
+  /*
+  overflow:auto;
+  */
+}
+
+#div-main{
+  display: flex;
+}
+
+#div-main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #16808C;
+  background-color: #64732F;
+  min-height: 400px;
+  min-width: 70%;
+  max-width: 80%;
+}
+
+#div-main-right{
+}
+
+#div-main-h2{
+}
+
+#div-main-p{
+  padding:10px 25px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Aside CSS */
+
+aside{
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid #16808C;
+  background-color: #75B2BF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#div-aside{
+}
+
+#div-aside-h2{
+}
+
+#div-aside-dl{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Figure CSS */
+
+figure{
+  width: 100%;
+  border: 1px solid #16808C;
+  background-color: #7d2e15;
+  padding: 10px;
+}
+
+#div-figure{
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Footer CSS */
+
+footer{
+  border: 1px solid #75B2BF;
+  background-color:#16808C;
+  min-height:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div-footer{
+}
+
+/* --------------------------------------------------------------------------- */
+
+
+/* iframe specific styles for compatibility */
+html::-webkit-scrollbar{
+    width:5px;
+}
+html::-webkit-scrollbar-thumb{
+    background:rgb(50,50,50);
+    border-radius:5px;
+}
+html{
+    width:100%;
+}

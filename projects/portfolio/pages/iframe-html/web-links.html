@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Display Example</title>
+    <style>
+        pre{
+            background-color:#010101;
+            padding:10px;
+            overflow-x:auto;
+        }
+        code{
+            font-family:'Courier New', Courier, monospace;
+            color:#ffffff;
+            white-space:pre-wrap;
+            word-wrap:break-word;
+            overflow-wrap:break-word;
+        }
+        html::-webkit-scrollbar{
+            width:5px;
+        }
+        html::-webkit-scrollbar-thumb{
+            background:rgb(50, 50, 50);
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+<pre><code>
+&lt;!-- Objectives:
+Create Buttons Using CSS styling
+Create bookmarks and on-page links
+Create links that open a new page
+Assignment Requirements:
+Create your folder structure including a CSS folder
+Add your index and style pages
+Create a page that has 5 headings of hobbies or things that you are interested in
+Add ids to the headings so you will be able to link to them
+Add a nav section at the top of the page with links to the headings
+Style the links in the nav section as buttons using CSS
+Add 3 external links under each heading, and have those links open into a new window
+Add additional CSS styles to make the page attractive
+Add a &quot;top&quot; id at the top of the page
+Add links back to the top under each category
+Test your page, upload it, and hand in the link to the page.  --&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
+    &lt;title&gt;Introducing Myself&lt;/title&gt;
+    
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;body-div&quot;&gt;
+        &lt;!-- .container = div with class shortcut --&gt;
+        &lt;header&gt;
+            &lt;h1 id=&quot;page-title&quot;&gt;Things I'm Interested In&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;nav id=&quot;top-nav&quot;&gt;
+            &lt;!-- a*5 + tab = quick fill --&gt;
+            &lt;!-- # links to ID in same page --&gt;
+            &lt;a href=&quot;#hsr&quot;&gt;Honkai Star Rail&lt;/a&gt;
+            &lt;a href=&quot;#python&quot;&gt;Python&lt;/a&gt;
+            &lt;a href=&quot;#iphone-16&quot;&gt;iPhone 16&lt;/a&gt;
+            &lt;a href=&quot;#3d-printing&quot;&gt;3D Printing&lt;/a&gt;
+            &lt;a href=&quot;#philosophy&quot;&gt;Philosophy&lt;/a&gt;
+        &lt;/nav&gt;
+        &lt;!-- h2*5 + tab = quick fill --&gt;
+        &lt;div class=&quot;heading-container&quot;&gt;
+            &lt;h2 id=&quot;hsr&quot;&gt;Honkai Star Rail&lt;/h2&gt;
+                &lt;div class=&quot;ul-img-container&quot;&gt;
+                    &lt;div id=&quot;ul-container&quot;&gt;
+                        &lt;ul&gt;
+                        &lt;!-- (li&gt;a)*5 + tab = quick fill --&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://hsr.hoyoverse.com/en-us/&quot; target=&quot;_blank&quot;&gt;Honkai Star Rail Official website&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.prydwen.gg/star-rail/&quot; target=&quot;_blank&quot;&gt;Best Honkai Star Rail Community Information and Guides&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://fribbels.github.io/hsr-optimizer#scorer&quot; target=&quot;_blank&quot;&gt;Fribbels HSR Character Optimizer&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;img-container&quot;&gt;
+                        &lt;img src=&quot;images/hsr-early-shrunk.jpg&quot; alt=&quot;Early cast from the launch of HSR, from MiHoYo&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Image obtained from: https://www.reddit.com/r/HonkaiStarRail/comments/udyyfx/official_with_logo_wallpaper_image_in_4k/ --&gt;
+                &lt;/div&gt;
+                &lt;a id=&quot;top_link&quot; href=&quot;#top&quot;&gt;top&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;heading-container&quot;&gt;
+            &lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
+                &lt;div class=&quot;ul-img-container&quot;&gt;
+                    &lt;div id=&quot;ul-container&quot;&gt;
+                        &lt;ul&gt;
+                        &lt;!-- (li&gt;a)*5 + tab = quick fill --&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.python.org/psf-landing/&quot; target=&quot;_blank&quot;&gt;Python Software Foundation&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.tiobe.com/tiobe-index/&quot; target=&quot;_blank&quot;&gt;TIOBE Programming Community Index&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://pll.harvard.edu/subject/python&quot; target=&quot;_blank&quot;&gt;Harvard University Free Python Courses&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;img-container&quot;&gt;
+                        &lt;img src=&quot;images/python.jpg&quot; alt=&quot;iStock photo of Python Code, credit to matejmo&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Image obtained from: https://www.istockphoto.com/photo/glowing-python-programming-language-code-on-a-blue-digital-surface-with-a-sphere-gm1413990965-462867622 --&gt;
+                &lt;/div&gt;
+                &lt;a id=&quot;top_link&quot; href=&quot;#top&quot;&gt;top&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;heading-container&quot;&gt;
+            &lt;h2 id=&quot;iphone-16&quot;&gt;iPhone 16 Pro Max&lt;/h2&gt;
+                &lt;div class=&quot;ul-img-container&quot;&gt;
+                    &lt;div id=&quot;ul-container&quot;&gt;
+                        &lt;ul&gt;
+                        &lt;!-- (li&gt;a)*5 + tab = quick fill --&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.apple.com/iphone-16-pro/&quot; target=&quot;_blank&quot;&gt;Apple Official iPhone 16 Pro Site&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Dashboard%E3%80%90-Windshield-%E3%80%91HandsFree-Magnetic-Car%E3%80%90Strong/dp/B0BXDJLS35/ref=sr_1_7?crid=1QK46MLARDUVV&dib=eyJ2IjoiMSJ9.KTAC7ySaWUydcgkDXXOwp6wUjUR2QnVyNPO8c8dD01hQSOp8A3ubYjtn21kGkYrMUhWM7b0-LzTLzwAXX644z8l_xf4aC2YhHTCUK8ps6C-o88AuoC1v3P1ZxHAcm5tWtg63fcJ3HRcobMcr1v--o-PU_6SPzPFU2ZzV68812eN0_dO4prCK9K7XM4eyGaQiEeCWExvVW5RamImBljEhcuQEjOT0QlXCrX8RTLfR7PSEHNdZD-tmMrVM3-bYj5YewQzPYUUUv_KSSQzQ9udyba-ymOUIWDzmUhcsh8gGVEI.FlfMC1Wer1MxhXDln5RokmE7JANyvubgdVdA_P4XZNI&dib_tag=se&keywords=magsafe%2Bcar%2Bmount%2Bcharger&qid=1727896657&refinements=p_72%3A2491149011&rnid=2491147011&s=wireless&sprefix=magsafe%2B%2Caps%2C124&sr=1-7&th=1&quot; target=&quot;_blank&quot;&gt;The Car Mount I Will Probably Buy&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.androidauthority.com/switching-android-iphone-3395762/&quot; target=&quot;_blank&quot;&gt;Android Authority's Switching from Android to iPhone Guide&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;img-container&quot;&gt;
+                        &lt;img src=&quot;images/iphone-16.jpg&quot; alt=&quot;Official Apple Image of iPhone 16 Pro line, credit to Apple&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Image obtained from: https://www.apple.com/iphone-16-pro/ --&gt;
+                &lt;/div&gt;
+                &lt;a id=&quot;top_link&quot; href=&quot;#top&quot;&gt;top&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;heading-container&quot;&gt;
+            &lt;h2 id=&quot;3d-printing&quot;&gt;3D Printing&lt;/h2&gt;
+                &lt;div class=&quot;ul-img-container&quot;&gt;
+                    &lt;div id=&quot;ul-container&quot;&gt;
+                        &lt;ul&gt;
+                        &lt;!-- (li&gt;a)*5 + tab = quick fill --&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://ultimaker.com/software/ultimaker-cura/&quot; target=&quot;_blank&quot;&gt;The Slicer I've Been Using for Years - Ultimaker Cura&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.klipper3d.org/&quot; target=&quot;_blank&quot;&gt;The Firmware Upgrade I'm Afraid to Attempt&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.longer3d.com/products/lk5-pro-fdm-3d-printer?srsltid=AfmBOorAEAZ8x2Bicnt7hJmOSUVGupiH_R4l4RaHwBcWUHPUjucF0VAh&quot; target=&quot;_blank&quot;&gt;My Current Functioning 3D Printer - Longer LK5 Pro&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;img-container&quot;&gt;
+                        &lt;img src=&quot;images/lk5-pro.png&quot; alt=&quot;Longer LK5 Pro 3D Printer, credit All3DP.com&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Image obtained from: https://all3dp.com/1/longer-lk5-pro-review-3d-printer-specs/ --&gt;
+                &lt;/div&gt;
+                &lt;a id=&quot;top_link&quot; href=&quot;#top&quot;&gt;top&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;heading-container&quot;&gt;
+            &lt;h2 id=&quot;philosophy&quot;&gt;Philosophy and Ethics&lt;/h2&gt;
+                &lt;div class=&quot;ul-img-container&quot;&gt;
+                    &lt;div id=&quot;ul-container&quot;&gt;
+                        &lt;ul&gt;
+                        &lt;!-- (li&gt;a)*5 + tab = quick fill --&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Aleksandr_Solzhenitsyn&quot; target=&quot;_blank&quot;&gt;One of My Favorite Thinkers That Serves As A Critical Thought Trigger&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/@unsolicitedadvice9198&quot; target=&quot;_blank&quot;&gt;A YouTube Channel I've Been Watching Recently&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Panopticon#:~:text=The%20panopticon%20is%20a%20design,Bentham%20in%20the%2018th%20century.&quot; target=&quot;_blank&quot;&gt;My Favorite Concept I've Recently Discovered: Bentham's Panopticon&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;img-container&quot;&gt;
+                        &lt;img src=&quot;images/solz.webp&quot; alt=&quot;Alexander Solzhenitsyn working at his desk, credit to New York Times&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Image obtained from: https://www.nytimes.com/2008/08/04/books/04solzhenitsyn.html --&gt;
+                &lt;/div&gt;
+                &lt;a id=&quot;top_link&quot; href=&quot;#top&quot;&gt;top&lt;/a&gt;
+         &lt;/div&gt;
+        &lt;footer&gt;
+
+        &lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</body>
+</html>
