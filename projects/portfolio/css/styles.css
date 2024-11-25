@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .container{
 	display:flex;
 	justify-content:center;
@@ -20,7 +24,7 @@ html{
 }
 
 body{
-    width:80%;
+    width:100%;
     height:100%;
     margin:auto;
     flex-direction:column;
@@ -38,9 +42,10 @@ header{
     width:100%;
     height:25%;
     min-width:fit-content;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-top:5px inset rgb(209, 209, 209);
+    box-sizing:border-box;
 }
 #header-top-div{
     width:100%;
@@ -60,15 +65,15 @@ header{
     height:50%;
     text-align:center;
     background-color:rgb(5, 5, 5);
-    border-right:2px solid black;
+    border-right:5px inset rgb(209, 209, 209);
 }
 #header-left-class-div{
     width:100%;
     height:50%;
     flex-direction:column;
-    background-color:rgb(15, 15, 15);
-    border-right:2px solid black;
-    border-top:2px solid black;
+    background-color:rgb(20, 20, 20);
+    border-right:5px inset rgb(209, 209, 209);
+    border-top:5px inset rgb(209, 209, 209);
 }
 #header-left-class-top-div{
     width:60%;
@@ -86,7 +91,7 @@ header{
     width:75%;
     height:100%;
     min-width:fit-content;
-    background-color:rgb(20, 20, 20);
+    background-color:rgb(30, 30, 30);
 }
 
 nav{
@@ -96,7 +101,7 @@ nav{
 #nav-div{
     width:100%;
     height:20%;
-    border-top: 2px solid black;
+    border-top:5px inset rgb(209, 209, 209);
 }
 #ethics-nav{
     width:100%;
@@ -150,7 +155,7 @@ a.active{
 #main-div{
     width:100%;
     height:70%;
-    border: 2px solid black;
+    box-sizing:border-box;
 }
 #main-home{
     min-width:fit-content;
@@ -170,6 +175,7 @@ a.active{
     width:100%;
     height:100%;
     overflow:hidden;
+    border:5px inset rgb(209, 209, 209);
 }
 #home-duck{
     width:100%;
@@ -190,11 +196,12 @@ main{
     height:70%;
 }
 #main-ethics{
-    min-width:fit-content;
+    min-width:fit-content;    
 }
 #main-left-div{
     width:85%;
     height:100%;
+    border-top:5px inset rgb(209, 209, 209);
     flex-direction:column;
     flex-shrink:0;   /* Prevents shrinking, found at: 
                         https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
@@ -203,19 +210,31 @@ main{
     width:100%;
     height:70%;
 }
+#python-main-left-top-div{
+    width:100%;
+    height:100%;
+}
+#ethics-main-left-top-div{
+    width:100%;
+    height:100%;
+}
 #web-main-left-top-div{
     width:100%;
-    height:50%;
+    height:35%;
 }
 #main-left-top-left-div{
     box-sizing:border-box;
-    border:10px inset rgb(209, 209, 209);
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
     width:60%;
     height:100%;
 }
 #main-left-top-right-div{
     box-sizing:border-box;
-    border:10px inset rgb(209, 209, 209);
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
     width:40%;
     height:100%;
 }
@@ -226,25 +245,40 @@ main{
 #main-left-bottom-div{
     width:100%;
     height:30%;
+    border-bottom:5px inset rgb(209, 209, 209);
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
 }
 #web-main-left-bottom-div{
     box-sizing:border-box;
-    border:10px inset rgb(209, 209, 209);
+    border:5px inset rgb(209, 209, 209);
 
     width:100%;
-    height:50%;
+    height:65%;
 }
 .iframe-web::-webkit-scrollbar{
     width:5px;
 }
 
 .iframe-web::-webkit-scrollbar-thumb{
-    background:rgb(50, 50, 50);
+    background:rgb(178, 178, 178);
     border-radius:10px;
 }
 
 .iframe-web::-webkit-scrollbar-thumb:hover{
-    background:rgb(147, 147, 147);
+    background:rgb(178, 178, 178);
+}
+.iframe-python::-webkit-scrollbar{
+    width:5px;
+}
+
+.iframe-python::-webkit-scrollbar-thumb{
+    background:rgb(178, 178, 178);
+    border-radius:10px;
+}
+
+.iframe-python::-webkit-scrollbar-thumb:hover{
+    background:rgb(178, 178, 178);
 }
 
 /* the following ID's starting with #main- may be a bit messy. I had a div that refused to 
@@ -255,8 +289,9 @@ what the fix is exactly. */
     width:15%;
     height:100%;
     flex-shrink:0;   /* prevents shrinking, attempt to prevent an overlap in responsive, found at: 
-                        https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
-    border-left: 2px solid black;
+                        https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */    
+    border-top:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
 }
 #main-right-aside-div{
     width:100%;
@@ -297,7 +332,8 @@ what the fix is exactly. */
     box-sizing:border-box;
     width:100%;
     background-color:black;
-    border:2px solid black;
+    border-top:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
 }
 
 
@@ -309,8 +345,10 @@ footer{
 #footer-div{
     width:100%;
     height:5%;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    box-sizing:border-box;
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
 }
 #footer-content-div{
     height:100%;
@@ -361,11 +399,23 @@ aside{}
     height:100%;
     min-width:fit-content;
 }
+.ethics-h2{
+    text-align:center;
+    font-size:1.5em;
+    display:flex;
+    flex-direction:column;
+}
+.ethics-h2 h1{
+    text-decoration:underline;
+}
 
 iframe{}
 .iframe-project{}
 #iframe-discussion{}
-#iframe-paper{}
+#iframe-paper{
+    height:100%;
+    width:100%;
+}
 #iframe-case{}
 #iframe-html{
     width:100%;
@@ -379,6 +429,10 @@ iframe{}
     width:100%;
     height:100%;
 }
+#iframe-python{
+    width:100%;
+    height:100%;
+}
 
 p{}
 .p-project-description{}
@@ -388,9 +442,16 @@ h1{}
 .header-h1{}
 #header-right-title-h1{
     margin:0px;
-    font-size:3em;
+    font-size:5em;
+    letter-spacing:0.08em;
+    text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px -2px 0 #000;
     text-align:center;
     padding:0px 30px;
+    background-color:#313131;
+    border-radius:25px;
+    border:2px inset rgb(131, 131, 131);
+    padding:20px 40px;
+    filter:drop-shadow(0px 0px 1px #ffffff);
 }
 
 h2{}
@@ -604,6 +665,7 @@ h3{}
  
 
 /* Experimental Code */
+
 
 /* .code-block {
     border: 1px solid #ddd;

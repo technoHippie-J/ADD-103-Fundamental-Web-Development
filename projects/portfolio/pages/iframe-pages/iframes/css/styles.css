@@ -233,7 +233,7 @@ html::-webkit-scrollbar{
     width:5px;
 }
 html::-webkit-scrollbar-thumb{
-    background:rgb(50,50,50);
+    background:rgb(178, 178, 178);
     border-radius:5px;
 }
 html{
