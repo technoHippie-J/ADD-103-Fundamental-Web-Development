@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Display Example</title>
+    <style>
+        pre{
+            background-color:#010101;
+            padding:10px;
+            overflow-x:auto;
+        }
+        code{
+            font-family:'Courier New', Courier, monospace;
+            color:#ffffff;
+            white-space:pre-wrap;
+            word-wrap:break-word;
+            overflow-wrap:break-word;
+        }
+        html::-webkit-scrollbar{
+            width:5px;
+        }
+        html::-webkit-scrollbar-thumb{
+            background:rgb(50, 50, 50);
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+<pre><code>
+/* Google Fonts Imported Fonts */
+
+/* Original Code from Google 
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.edu-au-vic-wa-nt-guides-<uniquifier> {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+.edu-au-vic-wa-nt-guides-title{
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.great-vibes-regular{
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.yatra-one-regular{
+  font-family: "Yatra One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Structural page elements */
+
+html{
+    height:100%;
+    margin:0px;
+    display:flex;
+    align-items:center;
+}
+
+body{
+    background-color:rgb(72, 56, 34);
+    height:fit-content;
+    min-width:1100px;
+    width:100%;
+}
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+main{
+    width:100%;
+    margin:10px 0px;
+}
+
+footer{
+    height:100%;
+}
+
+/* Other page elements */
+
+h1{}
+
+h2{}
+
+p{}
+
+img{}
+
+ul{}
+
+/* Container <div>'s for page elements, important/structural */
+
+#body-container{
+    width:94%;
+    height:100%;
+    margin:5px auto 5px;
+    background-color:rgb(114, 144, 101);
+}
+
+#header-container{
+    width:100%;
+    max-height:150px;
+    background-color:rgb(60, 85, 54);
+    border-style:solid;
+    border-width:0px 0px 1px 0px;
+    border-color:black;
+    box-sizing:border-box;
+}
+
+#nav-container{
+    width:max-content;
+    min-height:50px;
+    height:5%;
+    margin:15px auto 0px;
+    background-color:rgb(129, 129, 129);
+    border-style:dashed;
+    border-width:1px;
+    border-color:black;
+    border-radius:10px;
+    box-sizing:border-box;
+    filter:drop-shadow(2px 2px 5px black)
+}
+
+#main-container{
+    width:98%;
+    min-height:560px;
+    height:64%;
+    margin:0px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#footer-container{
+    width:auto;
+    min-height:100px;
+    height:12%;
+    margin:0px auto;
+    background-color:rgb(60, 85, 54);
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    border-top:1px solid black;
+}
+
+/* Header Classes and IDs */
+
+.header-div{
+    align-items:center;
+    font-size:5em;
+    filter:drop-shadow(0px 0px 3px rgb(155, 178, 96));
+}
+
+#header-left-logo{
+    width:8%;
+    display:flex;
+    align-items:center;
+    justify-content:right;
+    filter:drop-shadow(0px 0px 10px rgb(155, 178, 96, 0.5));
+}
+
+#header-right-logo{
+    width:8%;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    filter:drop-shadow(0px 0px 10px rgb(155, 178, 96, 0.5));
+}
+
+#logo-right{
+    height:150px;
+    width:75px;
+    opacity:0.5;
+    filter:sepia(70%);
+}
+
+#logo-left{
+    height:150px;
+    width:75px;
+    opacity:0.5;
+    filter:sepia(70%);
+}
+
+#header-left{
+    width:32%;
+    height:auto;
+    min-height:150px;
+    display:flex;
+    justify-content:right;
+    padding-right:30px;
+}
+
+#logo-container{
+    width:10%;
+    height:auto;
+    max-height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    filter:drop-shadow(0px 0px 20px rgb(155, 178, 96, 0.8));
+}
+
+#header-right{
+    width:32%;
+    height:auto;
+    min-height:150px;
+    display:flex;
+    justify-content:left;
+    padding-left:30px;
+}
+
+/* Nav Classes and IDs */
+
+.nav-btn{
+    min-width:175px;
+    min-height:50px;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2em;
+}
+
+.nav-link{
+    width:80%;
+    padding:0%;
+    min-height:50px;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(129, 129, 129);
+    text-decoration:none;
+    color:rgb(31, 36, 22);
+}
+
+.nav-link:hover{
+    background-color:rgb(114, 114, 114);
+    border-style:inset;
+    border-width:1px;
+    border-color:rgb(114, 114, 114);
+    box-sizing:border-box;
+}
+
+.nav-link:active{
+    background-color:rgb(30, 30, 30);
+    filter:drop-shadow(0px 0px 10px rgb(220, 220, 220));
+    color:rgb(255, 255, 255)
+}
+
+#nav-link-person{
+    text-decoration:line-through;
+}
+
+.nav-ul{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    width:100%;
+    height:100%;
+
+}
+
+
+/* Footer IDs */
+
+#footer-link-container{
+    margin-top:10px;
+}
+
+#contact-link{
+    text-decoration:none;
+    font-weight:bold;
+    color:rgb(167, 142, 32);
+    font-size:1.5em;
+    letter-spacing:0.25em;
+    padding:5px 5px 5px 10px;
+    border-style:solid;
+    border-width:1px;
+    border-color:rgb(167, 142, 32);
+    border-radius:10px;
+}
+
+#contact-link:hover{
+    background-color:rgb(87, 79, 30);
+    border-style:solid;
+    border-width:1px;
+    border-color:rgb(255, 230, 0);
+    box-sizing:border-box;
+    filter:drop-shadow(0px 0px 3px rgb(255, 230, 0));
+}
+
+#contact-link:active{
+    background-color:rgb(31, 28, 10);
+    filter:drop-shadow(0px 0px 10px rgb(255, 230, 0));
+}
+
+#footer-flex{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+}
+
+#footer-box-left{
+    width:30%;
+}
+
+#footer-box-center{
+    width:30%;
+}
+
+#footer-box-right{
+    width:30%;
+    text-align:right;
+}
+
+/* Home Page Classes and IDs */
+
+.home-block{
+    width:99%;
+    display:flex;
+    justify-content:space-around;
+    margin:0px 10px;
+}
+
+.home-img{
+    min-width:45%;
+    height:50%;
+    max-height:250px;
+    background-color:rgb(100, 113, 65);
+    margin:10px;
+    filter:drop-shadow(0px 0px 5px black);
+    border-radius:10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    box-sizing:border-box;
+}
+
+.home-p{
+    width:54%;
+    height:50%;
+    min-height:250px;
+    background-color:rgb(60, 85, 54);
+    margin:10px;
+}
+
+#home-p-01{
+    text-align:center;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    color:rgb(219, 219, 128);
+    font-size:2em;
+    padding:0px 80px;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#home-p-02{
+    text-align:center;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    color:rgb(219, 219, 128);
+    font-size:1.75em;
+    padding:0px 3%;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Life Page Classes and IDs */
+
+#life-heading{
+    font-size:3em;
+    margin:0px 0px 20px;
+}
+
+#life-block-top{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0px 10px;
+}
+
+#life-block-bottom{
+    text-align:center;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    padding:0px 10px;
+    margin-top:10px;
+    color:rgb(219, 219, 128);
+    font-size:1.05em;
+    box-sizing:border-box;
+}
+
+#life-img{
+    width:90%;
+    filter:drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+    border-radius:10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    box-sizing:border-box;
+}
+
+#life-gallery-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Hobbies Page Classes and IDs */
+
+.hobbies-img{
+    border-radius:10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    box-sizing:border-box;
+}
+
+#hobbies-h2{
+    text-align:center;
+    font-size:2.5em;
+    margin:0px;
+    padding:0px;
+}
+
+#hobbies-main-container{
+    height:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+
+#hobbies-block-left{
+    height:100%;
+    width:30%;
+}
+
+#hobbies-block-middle{
+    height:100%;
+    width:30%;
+}
+
+#hobbies-block-right{
+    height:100%;
+    width:30%;
+}
+
+#img-3dp-div{
+    width:100%;
+    height:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#hobbies-img-01{
+    width:90%;
+    filter:drop-shadow(0px 0px 5px black)
+}
+
+#img-self-imp-div{
+    width:100%;
+    height:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#hobbies-img-02{
+    width:90%;
+    filter:drop-shadow(0px 0px 5px black)
+}
+
+#img-carn-div{
+    width:100%;
+    height:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#hobbies-img-03{
+    width:90%;
+    filter:drop-shadow(0px 0px 5px black)
+}
+
+#hobbies-p-01{
+    text-align:center;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    padding:10px 10px;
+    margin-top:10px;
+    color:rgb(219, 219, 128);
+    font-size:1.05em;
+    box-sizing:border-box;
+}
+
+#hobbies-p-02{
+    text-align:center;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    padding:10px 10px;
+    margin-top:10px;
+    color:rgb(219, 219, 128);
+    font-size:1.05em;
+    box-sizing:border-box;
+}
+
+#hobbies-p-03{
+    text-align:center;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    padding:10px 10px;
+    margin-top:10px;
+    color:rgb(219, 219, 128);
+    font-size:1.05em;
+    box-sizing:border-box;
+}
+
+/* Person Page Classes and IDs */
+
+.person-img{}
+
+.person-p{}
+
+.person-block{}
+
+#person-block-left{}
+
+#person-block-left-top{}
+
+#person-block-left-bottom{}
+
+#person-block-right{}
+
+#person-img-01{}
+
+#person-p-01{}
+
+#person-p-02{}
+
+#person-p-03{}
+
+
+/* Vision Page Classes and IDs */
+
+#vision-main{
+    height:100%;
+    margin:0px;
+}
+
+.vision-img{
+    box-sizing:border-box;
+}
+
+.vision-p{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.vision-block{
+    max-height:180px;
+}
+
+#vision-block-main{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#vision-block-top-h2{
+    margin:0px;
+    font-size:2em;
+    text-align:left;
+    padding-left:15%;
+}
+
+#vision-block-top{
+    width:100%;
+    height:30%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#vision-block-top-left{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+}
+
+#vision-block-top-right{
+    width:70%;
+    height:100%;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+}
+
+#vision-block-top-p{
+    width:100%;
+    display:flex;
+    justify-content:right;
+}
+
+#vision-block-mid{
+    width:100%;
+    height:30%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#vision-block-mid-left{
+    width:70%;
+    height:100%;
+    text-align:center;
+    display:flex;
+    justify-content:left;
+    align-items:center;
+}
+
+#vision-block-mid-right{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content:left;  
+}
+
+#vision-block-bottom{
+    width:100%;
+    height:30%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#vision-block-bottom-left{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content:right;
+}
+
+#vision-block-bottom-right{
+    width:70%;
+    height:100%;
+    text-align:center;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+}
+
+#vision-img-top{
+    max-height:150px;
+    filter:drop-shadow(0px 0px 5px black);
+    border-radius:10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+}
+
+#vision-img-mid{
+    height:150px;
+    filter:drop-shadow(0px 0px 5px black);
+    border-radius:10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+}
+
+#vision-img-bottom{
+    height:150px;
+    filter:drop-shadow(0px 0px 5px black);
+    border-radius:10px;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+}
+
+#vision-p-top{
+    height:100px;
+    width:90%;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    padding:10px 20px;
+    color:rgb(219, 219, 128);
+    font-size:1.3em;
+}
+
+#vision-p-mid{
+    height:100px;
+    width:90%;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    padding:10px 20px;
+    color:rgb(219, 219, 128);
+    font-size:1.3em;
+}
+
+#vision-p-bottom{
+    height:100px;
+    width:90%;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    padding:10px 20px;
+    color:rgb(219, 219, 128);
+    font-size:1.3em;
+}
+
+/* Contact Page Classes and IDs */
+
+fieldset{
+    width:0%;
+    margin-bottom:10px;
+}
+
+input{
+    margin:2px 0px 10px;
+    height:2em;
+    width:220px;
+    text-align:right;
+}
+
+.contact-block{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.contact-btn{
+    width:120px;
+    text-align:center;
+    border-radius:15px;
+}
+
+#contact-btn-container{
+    width:100%;
+    display:flex;
+    justify-content:right;
+    gap:5%;
+}
+
+#contact-main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+
+#contact-left-div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+    height:auto;
+    min-height:250px;
+}
+
+#contact-block-left{
+    width:100%;
+    height:auto;
+    min-height:250px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(31, 36, 22);
+    border-radius:10px;
+    background-color:rgb(31, 36, 22, 0.5);
+    padding:30px;
+    color:rgb(219, 219, 128);
+    font-size:1.05em;
+}
+
+#contact-block-right{
+    width:30%;
+    justify-content:center;
+    /* background-color:rgba(0, 0, 0, 0.365) */
+    filter:drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.508));
+    font-weight:bolder;
+}
+
+label{
+    filter:drop-shadow(0px 0px 5px white)
+}
+
+legend{
+    filter:drop-shadow(0px 0px 5px white)
+}
+
+#contact-h2{
+    font-size:3em;
+    margin:0px 0px 30px;
+}
+
+#contact-p{
+    font-size:1.5em;
+    text-align:justify;
+    margin:0px;
+}
+
+#contact-form{
+    width:70%;
+    height:fit-content;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:right;
+    align-items:center;
+    margin-bottom:-20px;
+}
+
+#contact-fieldset-info{
+    width:fit-content;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+
+.form-input{
+    height:1.5em;
+}
+
+#contact-fieldset-message{
+    height:fit-content;
+}
+</code></pre>
+</body>
+</html>

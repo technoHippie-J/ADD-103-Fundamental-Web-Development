@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Great+Vibes&family=Yatra+One&display=swap" rel="stylesheet">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div id="body-container" class="container">
+        <div id="header-container" class="container">
+            <header class="great-vibes-regular">
+                <div id="header-left-logo">
+                    <img id="logo-left" src="../images/logo-left-face.png" alt="Left Face Logo">
+                </div>
+                <div id="header-left" class="header-div">
+                    Tony
+                </div>
+                <div id="logo-container">
+                    <img id="logo" src="../images/logo.png" alt="Page Logo">
+                </div>
+                <div id="header-right" class="header-div">
+                    Janus
+                </div>
+                <div id="header-right-logo">
+                    <img id="logo-right" src="../images/logo-right-face.png" alt="Right Face Logo">
+                </div>
+            </header>
+        </div>
+        <div id="nav-container" class="container">
+            <nav class="yatra-one-regular">
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-home" href="../index.html">Home</a>
+                </div>
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-life" href="life.html">Life</a>
+                </div>
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-hobbies" href="hobbies.html">Hobbies</a>
+                </div>
+                <div class="nav-btn">
+                    <a class="nav-link" id="nav-link-vision" href="vision.html">Vision</a>
+                </div>
+            </nav>
+        </div>
+        <div id="main-container" class="container">
+            <!--
+                The area between the <main> and </main> tags is what can be changed from page to page. Everything before this comment will remain a static piece of the design.
+            -->
+            <main id="contact-main">
+                <div id="contact-left-div">
+                    <h2 id="contact-h2">
+                            Contact Me
+                    </h2>
+                    <div id="contact-block-left" class="contact-block">
+                        <p id="contact-p">
+                            Thank you for visiting my site! Whether you have questions about my work, are interested in collaborating on a project, or just want to say hello, I’d love to hear from you. I’m always open to new opportunities, feedback, and ideas. Feel free to reach out through the contact form below, and I’ll get back to you as soon as possible. If you prefer, you can also email me directly at tonyjanus@gmail.com. I aim to respond within 24-48 hours.
+                            <br>
+                            <br>
+                            If you’re looking to connect on social media, you can find me on Facebook under my name, or Instagram under the handle technoHippieDude, or on X under the handle @PsyAnon_Hippie, where I semi-regularly share updates and insights on controversial political subjects, the carnivore diet, and other random thoughs of mine. I look forward to connecting with you!
+                        </p>
+                    </div>
+                </div>
+                <!--
+                    The <div> below contains a contact form, which we haven't played with yet in class. I have gone to W3Schools and used the information found there to implement the form into this site. The pages used are the following:
+
+                    -https://www.w3schools.com/html/html_forms.asp
+
+                    -https://www.w3schools.com/html/html_forms_attributes.asp
+
+                    -https://www.w3schools.com/html/html_form_elements.asp
+
+                    -https://www.w3schools.com/tags/att_form_enctype.asp
+
+                    -https://www.w3schools.com/html/html_form_input_types.asp
+
+                    -https://www.w3schools.com/tags/att_input_placeholder.asp
+
+                    -https://stackoverflow.com/questions/2436716/is-application-x-www-form-urlencoded-default-for-html-form
+
+                    I've also found that for it to work properly, I would need a .php file to write the contact information to. Since I do not know how to do this yet, I will only create the empty file in a folder called "php" and once I'm done coding the rest of the project, and if I have time, I will see if I can learn enough to get it working. If not, then it will act as a reminder for me to reference in the future. If I do make the attempt, I will start at the following link:
+
+                    -https://www.w3schools.com/php/default.asp
+                -->
+                <div id="contact-block-right" class="contact-block">
+                    <form action="mailto:tonyjanus@gmail.com" method="post" autocomplete="on" enctype="multipart/form-data" id="contact-form">
+                        <fieldset id="contact-fieldset-info">
+                            <legend>Contact Information</legend>
+                            <label for="fname">First Name:</label>
+                                <input type="text" id="contact-fname" class="form-input" name="fname" placeholder="Enter your first name...">
+                            <label for="lname">Last Name:</label>
+                                <input type="text" id="contact-lname" class="form-input"  name="lname" placeholder="Enter your last name...">
+                            <label for="email">Email:</label>
+                                <input type="email" id="contact-email" class="form-input"  name="email" placeholder="Enter your email...">
+                            <label for="subject">Subject:</label>
+                                <input type="text" id="contact-subject" class="form-input"  name="subject" placeholder="Few words why you're reaching out...">
+                        </fieldset>
+                        <fieldset id="contact-fieldset-message">
+                            <legend>Your Message:</legend>
+                            <textarea name="message" rows="10" cols="50" id="contact-message" placeholder="Enter your message here..."></textarea>
+                        </fieldset>
+                        <div id="contact-btn-container">
+                            <input type="reset" value="Reset" class="contact-btn">
+                            <input type="submit" value="Submit" class="contact-btn" >
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <!--
+                End section of editable code. Anything after this comment is static from page to page as pieces of the design.
+            -->
+        </div>
+        <div id="footer-container" class="container">
+            <footer id="footer-flex">
+                <div id="footer-box-left" class="footer-box">
+                    <!-- Empty Div for Spacing -->
+                </div>
+                <div id="footer-box-center" class="footer-box">
+                    <small>
+                        &copy; Copyright 2024, Tony Janus
+                        <br>
+                        Images and logos generated by ChatGPT, and text written in collaboration with ChatGPT
+                    </small>
+                </div>
+                <div id="footer-box-right" class="footer-box">
+                    <div id="footer-link-container" class="yatra-one-regular">
+                        <a class="footer-link" id="contact-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

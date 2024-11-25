@@ -1,58 +1,58 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Template v2&lt;/title&gt;
-    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;images/favicon.ico&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header class=&quot;container flexbox-container&quot;&gt;
-        &lt;div&gt;
-            &lt;h1 id=&quot;header-title&quot;&gt;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template v2</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="container flexbox-container">
+        <div>
+            <h1 id="header-title">
                 Forms
-            &lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;nav&gt;
-            &lt;ul&gt;
-                &lt;li&gt;
-                    &lt;a href=&quot;../../index.html&quot;&gt;Root Index&lt;/a&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
-    &lt;/header&gt;
-    &lt;main class=&quot;container&quot;&gt;
-        &lt;section class=&quot;container&quot; id=&quot;form-container&quot;&gt;
-            &lt;form action=&quot;mailto:tonyjanus@gmail.com&quot; method=&quot;post&quot; autocomplete=&quot;on&quot; enctype=&quot;multipart/form-data&quot; id=&quot;contact-form&quot;&gt;
-                &lt;fieldset id=&quot;contact-fieldset-info&quot;&gt;
-                    &lt;legend id=&quot;legend-top&quot;&gt;Contact Information&lt;/legend&gt;
-                    &lt;label for=&quot;fname&quot;&gt;First Name:&lt;/label&gt;
-                        &lt;input type=&quot;text&quot; id=&quot;contact-fname&quot; class=&quot;form-input&quot; name=&quot;fname&quot; placeholder=&quot;Enter your first name...&quot;&gt;
-                    &lt;label for=&quot;lname&quot;&gt;Last Name:&lt;/label&gt;
-                        &lt;input type=&quot;text&quot; id=&quot;contact-lname&quot; class=&quot;form-input&quot;  name=&quot;lname&quot; placeholder=&quot;Enter your last name...&quot;&gt;
-                    &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
-                        &lt;input type=&quot;email&quot; id=&quot;contact-email&quot; class=&quot;form-input&quot;  name=&quot;email&quot; placeholder=&quot;Enter your email...&quot;&gt;
-                    &lt;label for=&quot;subject&quot;&gt;Subject:&lt;/label&gt;
-                        &lt;input type=&quot;text&quot; id=&quot;contact-subject&quot; class=&quot;form-input&quot;  name=&quot;subject&quot; placeholder=&quot;Few words why you're reaching out...&quot;&gt;
-                &lt;/fieldset&gt;
-                &lt;fieldset id=&quot;field-right&quot;&gt;
-                    &lt;legend id=&quot;legend-right&quot;&gt;Optional&lt;/legend&gt;
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html">Root Index</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container" id="form-container">
+            <form action="mailto:tonyjanus@gmail.com" method="post" autocomplete="on" enctype="multipart/form-data" id="contact-form">
+                <fieldset id="contact-fieldset-info">
+                    <legend id="legend-top">Contact Information</legend>
+                    <label for="fname">First Name:</label>
+                        <input type="text" id="contact-fname" class="form-input" name="fname" placeholder="Enter your first name...">
+                    <label for="lname">Last Name:</label>
+                        <input type="text" id="contact-lname" class="form-input"  name="lname" placeholder="Enter your last name...">
+                    <label for="email">Email:</label>
+                        <input type="email" id="contact-email" class="form-input"  name="email" placeholder="Enter your email...">
+                    <label for="subject">Subject:</label>
+                        <input type="text" id="contact-subject" class="form-input"  name="subject" placeholder="Few words why you're reaching out...">
+                </fieldset>
+                <fieldset id="field-right">
+                    <legend id="legend-right">Optional</legend>
                     
-                &lt;/fieldset&gt;
-                &lt;fieldset id=&quot;contact-fieldset-message&quot;&gt;
-                    &lt;legend&gt;Your Message:&lt;/legend&gt;
-                    &lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;50&quot; id=&quot;contact-message&quot; placeholder=&quot;Enter your message here...&quot;&gt;&lt;/textarea&gt;
-                &lt;/fieldset&gt;
-                &lt;div id=&quot;contact-btn-container&quot;&gt;
-                    &lt;input type=&quot;reset&quot; value=&quot;Reset&quot; class=&quot;contact-btn&quot;&gt;
-                    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;contact-btn&quot; &gt;
-                &lt;/div&gt;
-            &lt;/form&gt;
-        &lt;/section&gt;
-    &lt;/main&gt;
-    &lt;footer class=&quot;container&quot;&gt;
+                </fieldset>
+                <fieldset id="contact-fieldset-message">
+                    <legend>Your Message:</legend>
+                    <textarea name="message" rows="10" cols="50" id="contact-message" placeholder="Enter your message here..."></textarea>
+                </fieldset>
+                <div id="contact-btn-container">
+                    <input type="reset" value="Reset" class="contact-btn">
+                    <input type="submit" value="Submit" class="contact-btn" >
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="container">
         &copy; 2024 Tony Janus
-    &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+    </footer>
+</body>
+</html>

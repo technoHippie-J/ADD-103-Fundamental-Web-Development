@@ -8,4 +8,5 @@ html::-webkit-scrollbar-thumb{
 }
 html{
     width:100%;
+    background-color:rgb(107, 149, 75);
 }
