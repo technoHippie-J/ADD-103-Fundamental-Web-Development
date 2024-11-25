@@ -1,0 +1,719 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+    color:ivory;
+    /* for visualizing layout */
+    /* border:1px solid rgb(0, 0, 0); */
+}
+.ethics-container{    
+	display:flex;
+	justify-content:center;
+    color:ivory;
+}
+html{
+    height:100%;
+    width:100%;
+    /* code below from https://cssgradient.io/ */
+	background: rgb(0,0,0);
+	background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 24%, rgba(50,50,50,1) 68%, rgba(71,71,71,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 24%, rgba(50,50,50,1) 68%, rgba(71,71,71,1) 100%);
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 24%, rgba(50,50,50,1) 68%, rgba(71,71,71,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#474747",GradientType=1);
+    /* end gradient code */
+}
+
+body{
+    width:100%;
+    height:auto;
+    margin:auto;
+    flex-direction:column;
+    min-width:fit-content;
+    background-color:rgb(29, 29, 29);
+}
+#body-ethics{}
+
+header{
+    width:100%;
+    height:auto;
+    flex-direction:column;
+}
+#header-div{
+    width:100%;
+    height:auto;
+    min-height:250px;
+    min-width:fit-content;
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-top:5px inset rgb(209, 209, 209);
+    box-sizing:border-box;
+}
+#header-top-div{
+    width:100%;
+    height:80%;
+    min-height:200px;
+}
+#header-ethics{
+    width:100%;
+    min-height:250px;
+}
+#header-left-div{
+    width:25%;
+    height:100%;
+    min-height:200px;
+    flex-direction:column;
+    min-width:fit-content;
+}
+#header-left-name-div{
+    width:100%;
+    height:50%;
+    min-height:100px;
+    text-align:center;
+    background-color:rgb(5, 5, 5);
+    border-right:5px inset rgb(209, 209, 209);
+}
+#header-left-class-div{
+    width:100%;
+    height:50%;
+    min-height:100px;
+    flex-direction:column;
+    background-color:rgb(20, 20, 20);
+    border-right:5px inset rgb(209, 209, 209);
+    border-top:5px inset rgb(209, 209, 209);
+}
+#header-left-class-top-div{
+    width:60%;
+    height:30%;
+    text-align:left;
+    text-decoration:underline;
+}
+#header-left-class-bottom-div{
+    width:70%;
+    height:50%;
+    border:0;
+    text-align:center;
+}
+#header-right-div{
+    width:75%;
+    height:100%;
+    min-width:fit-content;
+    background-color:rgb(30, 30, 30);
+}
+
+nav{
+    width:100%;
+    height:100%;
+}
+#nav-div{
+    width:100%;
+    height:20%;
+    border-top:5px inset rgb(209, 209, 209);
+}
+#ethics-nav{
+    width:100%;
+    height:100%;
+}
+#nav-ul-div{
+    width:100%;
+    height:100%;
+    min-height:50px;
+}
+#nav-ul{
+    width:80%;
+    height:100%;
+    min-height:50px;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+.nav-btn{
+    width:15%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:1.5em;
+    font-weight:bold;
+}
+nav a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.nav-btn:hover{
+    background-color:rgb(50, 50, 50);
+    filter:drop-shadow(-1px -1px 0 rgb(255, 255, 255)); 
+}
+.nav-btn:active{
+    background-color:rgb(255, 255, 255);
+}
+.nav-btn.active{
+    filter:drop-shadow(-1px -1px 0 rgb(255, 255, 255));        
+}
+a.active{
+    filter:drop-shadow(-1px -1px 0 rgb(255, 255, 255));
+}
+#nav-btn-home{}
+#nav-btn-python{}
+#nav-btn-web{}
+#nav-btn-ux-ui{}
+#nav-btn-ethics{}
+
+/* Index */
+#main-div{
+    width:100%;
+    height:auto;
+    box-sizing:border-box;
+}
+#main-home{
+    min-width:fit-content;
+}
+#main-home-div{
+    width:100%;
+    height:100%;
+    flex-direction:column;
+    flex-shrink:0;   /* Prevents shrinking, found at: 
+                        https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
+}
+#main-home-top-div{
+    width:100%;
+    height:100%;
+}
+#main-home-top-full-div{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    border:5px inset rgb(209, 209, 209);
+}
+#home-duck{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+#main-home-bottom-div{
+    width:100%;
+    height:30%;
+}
+/* Ethics */
+main{
+    width:100%;
+    height:100%;
+}
+#main-ethics{
+    min-width:fit-content; 
+    height:auto;   
+}
+#main-left-div{
+    width:85%;
+    height:auto;
+    border-top:5px inset rgb(209, 209, 209);
+    flex-direction:column;
+    flex-shrink:0;   /* Prevents shrinking, found at: 
+                        https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
+}
+#main-left-top-div{
+    width:100%;
+    height:70%;
+}
+#python-main-left-top-div{
+    width:100%;
+    height:100%;
+}
+#ethics-main-left-top-div{
+    width:100%;
+    height:auto;
+    min-height:750px;
+}
+.ethics-main-left-top-div{
+    width:100%;
+    height:auto;
+    min-height:750px;
+    border-top:5px inset rgb(209, 209, 209);
+}
+.ethics-gap{
+    width:100%;
+    min-height:50px;
+    border-right:5px inset rgb(209, 209, 209);
+    border-left:5px inset rgb(209, 209, 209);
+}
+#web-main-left-top-div{
+    width:100%;
+    height:35%;
+}
+#main-left-top-left-div{
+    box-sizing:border-box;
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
+    width:60%;
+    height:auto;
+    min-height:750px;
+}
+.main-left-top-left-div{
+    box-sizing:border-box;
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
+    width:60%;
+    height:auto;
+    min-height:750px;
+}
+#main-left-top-right-div{
+    box-sizing:border-box;
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
+    width:40%;
+    height:auto;
+    min-height:750px;
+    margin:auto;
+}
+#main-left-top-full-div{
+    width:100%;
+    height:100%;
+}
+#main-left-bottom-div{
+    width:100%;
+    height:30%;
+    border-bottom:5px inset rgb(209, 209, 209);
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+}
+#web-main-left-bottom-div{
+    box-sizing:border-box;
+    border:5px inset rgb(209, 209, 209);
+
+    width:100%;
+    height:65%;
+}
+.iframe-web::-webkit-scrollbar{
+    width:5px;
+}
+
+.iframe-web::-webkit-scrollbar-thumb{
+    background:rgb(178, 178, 178);
+    border-radius:10px;
+}
+
+.iframe-web::-webkit-scrollbar-thumb:hover{
+    background:rgb(178, 178, 178);
+}
+.iframe-python::-webkit-scrollbar{
+    width:5px;
+}
+
+.iframe-python::-webkit-scrollbar-thumb{
+    background:rgb(178, 178, 178);
+    border-radius:10px;
+}
+
+.iframe-python::-webkit-scrollbar-thumb:hover{
+    background:rgb(178, 178, 178);
+}
+
+/* the following ID's starting with #main- may be a bit messy. I had a div that refused to 
+stop overlapping other divs, so I tried a few things including min-width:fit-content and 
+flex-shrink:0 I've commented the lines to indicate where experimentation occurred. Not sure 
+what the fix is exactly. */
+#main-right-div{
+    width:15%;
+    height:auto;
+    flex-shrink:0;   /* prevents shrinking, attempt to prevent an overlap in responsive, found at: 
+                        https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */    
+    border-top:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+}
+#main-right-aside-div{
+    width:100%;
+    height:100%;
+    min-width:fit-content;  /* Prevents the aside from shrinking */
+}
+#main-right-aside-h2{
+    width:100%;
+    flex-shrink:0; /* Keeps the heading at its content height, found at: 
+                      https://www.w3schools.com/cssref/css3_pr_flex-shrink.php */
+    margin:20px 0px;
+    min-width:fit-content;  /* Prevents the heading from shrinking */
+}
+#main-right-aside-ol-div{
+    width:100%;
+    flex-grow:1; /* Allows the list to take up remaining space, found at:
+                    https://www.w3schools.com/cssref/css3_pr_flex-grow.php */
+    overflow-y:auto; /* Enables scrolling if the content is too long, found at:
+                        https://www.w3schools.com/cssref/css3_pr_overflow-y.php */
+    overflow-x:hidden;
+    align-items:start;
+}
+
+/* working */
+#main-right-aside-ol-div::-webkit-scrollbar, html::-webkit-scrollbar{
+    width:5px;
+}
+
+#main-right-aside-ol-div::-webkit-scrollbar-thumb{
+    background:rgb(50, 50, 50);
+    border-radius:10px;
+}
+
+#main-right-aside-ol-div::-webkit-scrollbar-thumb:hover{
+    background:rgb(147, 147, 147);
+}
+
+#main-right-aside-img-div {
+    box-sizing:border-box;
+    width:100%;
+    background-color:black;
+    border-top:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
+}
+
+
+footer{
+    width:100%;
+    height:100%;
+    flex-direction:column;
+}
+#footer-div{
+    width:100%;
+    height:5%;
+    box-sizing:border-box;
+    border-left:5px inset rgb(209, 209, 209);
+    border-right:5px inset rgb(209, 209, 209);
+    border-bottom:5px inset rgb(209, 209, 209);
+}
+#footer-content-div{
+    height:100%;
+    width:100%;
+}
+#footer-p{}
+
+img{}
+#img-ethics-duck-01{
+    width:100%;
+    display:block;
+}
+
+ol{}
+.ol-project-links{}
+#ol-ethics-links{
+    width:100%;
+    height:90%;
+    line-height:2em;
+    font-size:1.2em;
+    padding-left:60px;
+}
+
+li{}
+.li-project-link{}
+#li-ethics-01{}
+#li-ethics-02{}
+#li-ethics-03{}
+#li-ethics-04{}
+#li-ethics-05{}
+#li-ethics-06{}
+#li-ethics-07{}
+
+a{
+    text-decoration:none;
+    color:rgb(184, 184, 184);
+    width:100%;
+    height:100%;
+}
+a:active{
+    color:black;
+}
+
+aside{}
+.aside-project-links{}
+#aside-ethics{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    min-width:fit-content;
+}
+.ethics-h2{
+    text-align:center;
+    font-size:1.5em;
+    display:flex;
+    flex-direction:column;
+}
+.ethics-h2 h1{
+    text-decoration:underline;
+}
+
+iframe{}
+.iframe-project{}
+#iframe-discussion{}
+#iframe-paper{
+    height:100%;
+    min-height:750px;
+    width:100%;
+}
+#iframe-case{}
+#iframe-html{
+    width:100%;
+    height:100%;
+}
+#iframe-css{
+    width:100%;
+    height:100%;
+}
+#iframe-site{
+    width:100%;
+    height:100%;
+}
+#iframe-python{
+    width:100%;
+    height:100%;
+}
+
+p{}
+.p-project-description{}
+#p-ethics-description{}
+
+h1{}
+.header-h1{}
+#header-right-title-h1{
+    margin:0px;
+    font-size:5em;
+    letter-spacing:0.08em;
+    text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px -2px 0 #000;
+    text-align:center;
+    padding:0px 30px;
+    background-color:#313131;
+    border-radius:25px;
+    border:2px inset rgb(131, 131, 131);
+    padding:20px 40px;
+    filter:drop-shadow(0px 0px 1px #ffffff);
+}
+
+h2{}
+.header-h2{
+}
+#header-left-name-h2{
+    margin:0px;
+    font-size:3em;
+    width:100%;
+    padding:0px 10px;
+}
+#header-left-class-h2{
+    margin:0px;
+    font-size:3em;
+    width:100%;
+    padding:0px 10px;
+}
+.aside-h2{}
+#main-right-aside-h2{
+    padding-left:10%;
+    text-decoration:underline;
+    font-size:1.5em;
+    font-weight:bold;
+    letter-spacing:0.2em;
+}
+
+h3{}
+.header-h3{}
+#header-left-class-h3{
+    margin:0px;
+    font-size:1.5em;
+    width:100%;
+    padding:0px 10px;
+}
+
+
+/* ------- Subpages ------- */
+
+
+/* web-page */
+
+.subpage-container{}
+
+.subpage-footer-p{}
+
+#web-page-body{}
+
+#web-page-header-div{}
+
+#web-page-header{}
+
+#web-page-main-div{}
+
+#web-page-main{}
+
+#web-page-footer-div{}
+
+#web-page-footer{}
+
+#web-page-footer-p{}
+
+
+/* web-html */
+
+#web-html-body{}
+
+#web-html-header-div{}
+
+#web-html-header{}
+
+#web-html-main-div{}
+
+#web-html-main{}
+
+#web-html-footer-div{}
+
+#web-html-footer{}
+
+#web-html-footer-p{}
+
+
+/* web-css */
+
+#web-css-body{}
+
+#web-css-header-div{}
+
+#web-css-header{}
+
+#web-css-main-div{}
+
+#web-css-main{}
+
+#web-css-footer-div{}
+
+#web-css-footer{}
+
+#web-css-footer-p{}
+
+
+/* python-result */
+
+#python-result-body{}
+
+#python-result-header-div{}
+
+#python-result-header{}
+
+#python-result-main-div{}
+
+#python-result-main{}
+
+#python-result-footer-div{}
+
+#python-result-footer{}
+
+#python-result-footer-p{}
+
+
+/* python-code */
+
+.code-line{
+    
+}
+
+#python-code-body{
+    background-color:#151515;
+    width:100%;
+}
+
+#python-code-header-div{
+    width:80%;
+    margin:auto;
+}
+
+#python-code-header{
+    width:100%;
+}
+
+#python-code-main-div{
+    width:80%;
+    height:100%;
+    margin:auto;
+}
+
+#python-code-main{
+    width:100%;
+    height:100%;
+    margin:auto;
+    border:1px solid black;    
+    background-color:#1f1f1f;
+}
+
+#python-code-footer-div{
+    width:100%;
+    height:auto;
+    margin:auto;    
+    background-color:#1f1f1f;
+}
+
+#python-code-footer{
+    width:100%;
+    margin:auto;
+}
+
+#python-code-footer-p{
+    width:100%;
+    margin:auto;
+    color:#1f1f1f;  
+    text-align:center; 
+}
+
+
+/* ethics-post */
+
+#ethics-post-body{}
+
+#ethics-post-header-div{}
+
+#ethics-post-header{}
+
+#ethics-post-main-div{}
+
+#ethics-post-main{}
+
+#ethics-post-footer-div{}
+
+#ethics-post-footer{}
+
+#ethics-post-footer-p{}
+
+
+/* ethics-paper */
+
+#ethics-paper-body{}
+
+#ethics-paper-header-div{}
+
+#ethics-paper-header{}
+
+#ethics-paper-main-div{}
+
+#ethics-paper-main{}
+
+#ethics-paper-footer-div{}
+
+#ethics-paper-footer{}
+
+#ethics-paper-footer-p{}
+
+ 
+
+/* Experimental Code */
+
+
+/* .code-block {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #1e1e1e; /* VS Code dark theme background */
+/*    color: #d4d4d4; /* Default text color */
+/*    font-family: 'Fira Code', 'Courier New', monospace;
+    overflow-x: auto;
+    white-space: pre-wrap; /* Wrap long lines */
+/*} */
