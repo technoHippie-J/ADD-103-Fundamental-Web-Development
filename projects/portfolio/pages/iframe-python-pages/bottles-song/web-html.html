@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Display Example</title>
+    <style>
+        pre{
+            background-color:#010101;
+            padding:10px;
+            overflow-x:auto;
+        }
+        code{
+            font-family:'Courier New', Courier, monospace;
+            color:#ffffff;
+            white-space:pre-wrap;
+            word-wrap:break-word;
+            overflow-wrap:break-word;
+            font-size:1.1em;
+            font-weight:bold;
+        }
+        html::-webkit-scrollbar{
+            width:5px;
+        }
+        html::-webkit-scrollbar-thumb{
+    background:rgb(178, 178, 178);
+            border-radius:10px;
+        }
+    </style>
+</head>
+<body>
+<pre><code>
+# Write the program "99 Bottles of Beer on the Wall" using a while loop. Be mindful to change the word 'bottles' to 'bottle' when you are down to the last one. You need to do the full 99 bottles
+
+count = 99
+bottle = "bottles"
+
+while count > 0:
+    print(f"{count} {bottle} of beer on the wall,")
+    print(f"{count} {bottle} of beer!")
+    print("Take one down, pass it around,")
+    count -= 1  # subtract 1 from count
+    if count > 1:
+        print(f"{count} {bottle} of beer on the wall!\n")
+    elif count == 1:
+        bottle = "bottle"
+        print(f"{count} {bottle} of beer on the wall!\n")
+    else:
+        print(f"No more bottles of beer on the wall!\n")
+
+</code></pre>
+</body>
+</html>
