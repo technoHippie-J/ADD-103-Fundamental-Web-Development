@@ -1,0 +1,118 @@
+/* Google Font Import */
+
+.pirata-one-regular {
+  font-family: "Pirata One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Basic Elements */
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+header{
+    width:100%;
+    aspect-ratio:8161/878;
+    background-image:url(../images/page-elements/header-tile-01.png);
+    background-size:cover;
+    background-position:center;
+}
+
+.nav{
+    position:relative;
+    top:43%;
+    transform:translateY(-57%);
+    font-family: 'Pirata One', serif;
+    font-size:1.5em;
+    white-space:nowrap;   
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.nav-item{
+    text-align:center;
+    display:flex;
+    align-items:center;
+}
+
+.nav-link{
+    color:#ac7640 !important; /* found that this prevents bootstrap from overriding the color */
+    text-shadow: 
+        2px 2px 0px black, 
+        -2px 2px 0px black, 
+        2px -2px 0px black, 
+        -2px -2px 0px black; /* Black outline */
+}
+
+main.container-xlg{
+}
+
+#title-row{
+}
+
+h2{
+    font-family: 'Pirata One', serif;
+}
+
+@media only screen and (max-width: 1024px) and (min-width:631px) and (orientation: portrait){
+    .nav{
+        font-size:1em;
+    }
+}
+
+@media only screen and (max-width:630px) and (orientation: portrait){
+
+    header{
+        width:100%;
+        aspect-ratio:8160/2689;
+        background-image:url(../images/page-elements/header-tile-mobile.png);
+        background-size:cover;
+        background-position:center;
+        margin:0 auto;
+    }
+
+    .nav{
+        position:relative;
+        top:50%;
+        transform:translateY(-50%);
+        font-size:1.75em;  
+        white-space:wrap;  
+    }
+}
+
+@media only screen and (max-width: 445px) and (min-width:423px) and (orientation: portrait){
+    .nav{
+        font-size:1.5em;
+    }
+}
+
+/* Prevents responsive behavior below a certain width */
+@media only screen and (max-width:422px) and (orientation: portrait){
+    html, body {
+        overflow-x:hidden;
+        width:422px;
+    }
+    header {
+        width:422px;
+        height: calc(422px * (2689 / 8160));
+        margin:0 auto;
+        background-size:cover;
+        background-position:center;
+    }
+
+    .nav{
+        position:relative;
+        top:50%;
+        transform:translateY(-50%);
+        width:100%;
+        font-size:1.25em;  
+    }
+}
