@@ -74,6 +74,26 @@ h2{
     aspect-ratio:1792/32;
 }
 
+a.a-war > img:hover{
+    filter:drop-shadow(2px 2px 2px rgb(233, 215, 17));
+}
+
+a.a-mag > img:hover{
+    filter:drop-shadow(2px 2px 2px rgb(255, 0, 0));
+}
+
+a.a-rog > img:hover{
+    filter:drop-shadow(2px 2px 2px rgb(2, 179, 255));
+}
+
+a.a-nec > img:hover{
+    filter:drop-shadow(2px 2px 2px rgb(106, 0, 255));
+}
+
+a.a-dru > img:hover{
+    filter:drop-shadow(2px 2px 2px rgb(47, 255, 0));
+}
+
 @media only screen and (max-width: 1024px) and (min-width:631px) and (orientation: portrait){
     .nav{
         font-size:1em;
