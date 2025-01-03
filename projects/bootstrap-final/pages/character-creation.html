@@ -40,16 +40,598 @@
             </li>
         </ul>
     </header>
-    <main class="container-xlg flex-grow-1 d-flex justify-content-center align-items-center">
-        <div class="row g-0 w-100" id="title-row">
-            <div class="col container-fluid">
+    <main class="container-xlg">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <h1 class="text-warning align-text-bottom" id="char-create-h1">Character Creation</h1>
+                <img src="../images/scenes/platform.png" alt="Gnarled Wooden Platform" class="img-fluid mx-auto">
             </div>
-            <div class="col-10">
-                <h2 class="display-2 text-center text-warning title">The Game</h2>
+            <div class="col-3"></div>
+        </div>
+        <div class="row g-0 mt-4">
+            <div class="col-12 d-flex flex-wrap">
+                <div class="col-1">
+                </div>
+                <div class="col-2">
+                    <img src="../images/scenes/combat-scene.png" class="img-fluid rounded float-start" alt="Combat Scene">
+                </div>
+                <div class="col-1">
+                </div>
+                <div class="col-7">
+                    <h2 class="text-warning text-end">Racial Bonuses/Disadvantages</h2>
+                    <p class="text-warning text-end">The following table lists the playable races and their racial bonuses and penalties. Hover over an entry for more informaiton.</p>
+                    <div class="table-responsive">
+                        <table class="table table-responsive table-dark table-striped table-bordered table-hover">
+                            <caption class="text-secondary">Playable Races and Racial Bonuses/Penalties</caption>
+                            <thead>
+                                <tr>
+                                    <th>Race</th>
+                                    <th>Combat Bonus</th>
+                                    <th>Passive Bonus</th>
+                                    <th>Combat Penalty</th>
+                                    <th>Passive Penalty</th>
+                                    <th>Racial Ability</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Human</td>
+                                    <td>None</td>
+                                    <td>10% discount from allied faction merchants</td>
+                                    <td>None</td>
+                                    <td>Kill-on-Sight (KOS) to all factions except their own</td>
+                                    <td>Active Ability - Ingenuitive!: Activate this ability to perform any gathering action once per hour, even if the required tool is not held; gain +1 to success roll if the required tool is in player's possession</td>
+                                </tr>
+                                <tr>
+                                    <td>Elf</td>
+                                    <td>Agility +5<br>Intelligence +5</td>
+                                    <td>The cost to use ablities and cast spells is reduced by 5%</td>
+                                    <td>Strength -5<br>Stamina -5</td>
+                                    <td>Charisma -5 to all races except elves<br>Cost to purchase from non-elf merchants +10%</td>
+                                    <td>Active Ability - Glean: Judge target's emotional state, gaining +2 to next interaction roll; 24 hour cooldown</td>
+                                </tr>
+                                <tr>
+                                    <td>Orc</td>
+                                    <td>Strength +5<br>Stamina +5</td>
+                                    <td>Weight capacity before becoming encumbered increased by 20%</td>
+                                    <td>Intelligence -5<br>Wisdom -5</td>
+                                    <td>Charisma -10<br>Unable to trade with non-Orc merchants</td>
+                                    <td>Active Ability - Snarl: Cause all targets in a 5m radius to run in fear for 3 seconds; 5 minute cooldown</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-1">
+                </div>
             </div>
-            <div class="col container-fluid">
+        </div>
+        <div class="row g-0 mt-4">
+            <div class="col">
             </div>
-        </div>        
+            <div class="col-6">
+                <h2 class="text-warning">Class Starting Stats</h2>
+                <p class="text-warning">The table below lists each class and their initial stats. Hover over an entry for more information.</p>
+                <div class="table-responsive">
+                    <table class="table table-responsive table-dark table-striped table-bordered table-hover">
+                        <caption class="text-secondary text-end">Playable Classes and their starting stats</caption>
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Strength (STR)</th>
+                                <th>Stamina (STA)</th>
+                                <th>Dexterity (DEX)</th>
+                                <th>Agility (AGI)</th>
+                                <th>Intelligence (INT)</th>
+                                <th>Wisdom (WIS)</th>
+                                <th>Charisma (CHA)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Warrior</td>
+                                <td>20</td>
+                                <td>20</td>
+                                <td>15</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Rogue</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>20</td>
+                                <td>20</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Mage</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>20</td>
+                                <td>20</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Druid</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>10</td>
+                                <td>20</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Necromancer</td>
+                                <td>5</td>
+                                <td>20</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>20</td>
+                                <td>10</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col"></div>
+            <div class="col-3">
+                <img src="../images/scenes/icon-combat.png" class="img-fluid rounded float-end" alt="Combat Icon">
+            </div>
+            <div class="col"></div>          
+        </div>  
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <h1 class="text-warning align-text-bottom mt-5" id="char-create-h1">Class/Race Selection</h1>
+                <img src="../images/scenes/platform.png" alt="Gnarled Wooden Platform" class="img-fluid mx-auto">
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <!-- Warriors -->
+        <div class="row mb-2">
+            <div class="col-1"></div>
+            <div class="col-1">
+                <h2 class="display-3 text-warning text-start h2-char">Warrior</h2>
+            </div>
+            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
+                <img src="../images/scenes/wood-divide.png" alt="Wooden Divider" class="img-fluid wood-divide w-75">
+            </div>
+            <div class="col-1">
+                <h2 class="display-3 text-warning text-end h2-char">Warrior</h2>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Human</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Elf</h4></div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Orc</h4></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/warrior-human-m.webp" alt="Male Human Warrior" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/warrior-human-f.webp" alt="Female Human Warrior" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/warrior-elf-m.webp" alt="Male Elf Warrior" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/warrior-elf-f.webp" alt="Female Elf Warrior" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/warrior-orc-m.webp" alt="Male Orc Warrior" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/warrior-orc-f.webp" alt="Female Orc Warrior" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-2"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- Mages -->
+        <div class="row mb-2">
+            <div class="col-1"></div>
+            <div class="col-1">
+                <h2 class="display-3 text-warning text-start">Mage</h2>
+            </div>
+            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
+                <img src="../images/scenes/wood-divide.png" alt="Wooden Divider" class="img-fluid wood-divide w-75">
+            </div>
+            <div class="col-1">
+                <h2 class="display-3 text-warning text-end">Mage</h2>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Human</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Elf</h4></div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Orc</h4></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/mage-human-m.webp" alt="Male Human Mage" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/mage-human-f.webp" alt="Female Human Mage" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/mage-elf-m.webp" alt="Male Elf Mage" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/mage-elf-f.webp" alt="Female Elf Mage" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/mage-orc-m.webp" alt="Male Orc Mage" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/mage-orc-f.webp" alt="Female Orc Mage" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-2"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- Rogue -->
+        <div class="row mb-2">
+            <div class="col-1"></div>
+            <div class="col-1">
+                <h2 class="display-3 text-warning text-start">Rogue</h2>
+            </div>
+            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
+                <img src="../images/scenes/wood-divide.png" alt="Wooden Divider" class="img-fluid wood-divide w-75">
+            </div>
+            <div class="col-1">
+                <h2 class="display-3 text-warning text-end">Rogue</h2>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Human</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Elf</h4></div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Orc</h4></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/rogue-human-m.webp" alt="Male Human Rogue" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/rogue-human-f.webp" alt="Female Human Rogue" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/rogue-elf-m.webp" alt="Male Elf Rogue" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/rogue-elf-f.webp" alt="Female Elf Rogue" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/rogue-orc-m.webp" alt="Male Orc Rogue" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/rogue-orc-f.webp" alt="Female Orc Rogue" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-2"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- Necromancer -->
+        <div class="row mb-2">
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h2 class="display-3 text-warning">Necro</h2>
+            </div>
+            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
+                <img src="../images/scenes/wood-divide.png" alt="Wooden Divider" class="img-fluid wood-divide w-75">
+            </div>
+            <div class="col-1 text-center">
+                <h2 class="display-3 text-warning">Necro</h2>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Human</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Elf</h4></div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Orc</h4></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/necro-human-m.webp" alt="Male Human Necromancer" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/necro-human-f.webp" alt="Female Human Necromancer" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/necro-elf-m.webp" alt="Male Elf Necromancer" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/necro-elf-f.webp" alt="Female Elf Necromancer" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/necro-orc-m.webp" alt="Male Orc Necromancer" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/necro-orc-f.webp" alt="Female Orc Necromancer" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-2"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- Druid -->
+        <div class="row mb-2">
+            <div class="col-1"></div>
+            <div class="col-1">
+                <h2 class="display-3 text-warning text-start">Druid</h2>
+            </div>
+            <div class="col-8 d-flex flex-column justify-content-center align-items-center">
+                <img src="../images/scenes/wood-divide.png" alt="Wooden Divider" class="img-fluid wood-divide w-75">
+            </div>
+            <div class="col-1">
+                <h2 class="display-3 text-warning text-end">Druid</h2>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-2"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Human</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Elf</h4></div>
+            <div class="col-1"></div>
+            <div class="col-2 text-center">
+                <h4 class="text-warning display-6">Orc</h4></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/druid-human-m.webp" alt="Male Human Druid" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/druid-human-f.webp" alt="Female Human Druid" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/druid-elf-m.webp" alt="Male Elf Druid" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/druid-elf-f.webp" alt="Female Elf Druid" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+                <div class="float-start">
+                    <img src="../images/character-portraits/druid-orc-m.webp" alt="Male Orc Druid" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="float-end">
+                    <img src="../images/character-portraits/druid-orc-f.webp" alt="Female Orc Druid" class="rounded img-fluid shadow">
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-2"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Male</h4>
+            </div>
+            <div class="col-1 text-center">
+                <h6 class="text-warning">Female</h4>
+            </div>
+            <div class="col-2"></div>
+        </div>      
     </main>
 </body>
     <!-- Latest compiled JavaScript -->

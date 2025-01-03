@@ -58,8 +58,20 @@ main.container-xlg{
 #title-row{
 }
 
+#char-create-h1{
+    font-family: 'Pirata One', serif;
+    font-size:6em;
+}
 h2{
     font-family: 'Pirata One', serif;
+}
+
+.h2-char{
+    text-align:center;
+}
+
+#wood-divide{
+    aspect-ratio:1792/32;
 }
 
 @media only screen and (max-width: 1024px) and (min-width:631px) and (orientation: portrait){
