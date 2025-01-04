@@ -60,14 +60,9 @@ main.container-xlg{
 
 #char-create-h1{
     font-family: 'Pirata One', serif;
-    font-size:6em;
 }
 h2{
     font-family: 'Pirata One', serif;
-}
-
-.h2-char{
-    text-align:center;
 }
 
 #wood-divide{
@@ -92,6 +87,10 @@ a.a-nec > img:hover{
 
 a.a-dru > img:hover{
     filter:drop-shadow(2px 2px 2px rgb(47, 255, 0));
+}
+
+.shield{
+    max-width:50%;
 }
 
 @media only screen and (max-width: 1024px) and (min-width:631px) and (orientation: portrait){
