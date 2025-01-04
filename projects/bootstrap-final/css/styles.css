@@ -138,14 +138,14 @@ a.a-dru > img:hover{
         position:relative;
         top:50%;
         transform:translateY(-50%);
-        font-size:1.75em;  
+        font-size:1em;  
         white-space:wrap;  
     }
 }
 
 @media only screen and (max-width: 445px) and (min-width:423px) and (orientation: portrait){
     .nav{
-        font-size:1.5em;
+        font-size:1em;
     }
 }
 
@@ -168,6 +168,6 @@ a.a-dru > img:hover{
         top:50%;
         transform:translateY(-50%);
         width:100%;
-        font-size:1.25em;  
+        font-size:0.75em;  
     }
 }
